@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+{% block content %}
+<!-- Cart view section -->
+<section id="aa-myaccount">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="aa-myaccount-area">
+                    <div class="row">
+                        {% if message %}
+                        <div class="alert alert-success">{{message}}</div>
+                        {% endif %}
+                        <div class="col-md-6">
+                            <div class="aa-myaccount-login">
+                                <h4>Login</h4>
+                                <form action="{{servlet-context}}/login" method="post" class="aa-login-form">
+                                    {% csrf-field %}
+                                    <label for="">Email address<span>*</span></label>
+                                    <input type="text" name="email" placeholder="Email" {% if auth-errors %}value="{{email}}"{% endif %}>
+                                    {% if auth-errors.email %}
+                                    <div class="alert alert-danger">{{auth-errors.email|join}}</div>
+                                    {% endif %}
+                                    <label for="">Password<span>*</span></label>
+                                    <input type="password" name="password" placeholder="Password">
+                                    {% if auth-errors.password %}
+                                    <div class="alert alert-danger">{{auth-errors.password|join}}</div>
+                                    {% endif %}
+                                    <button type="submit" class="aa-browse-btn">Login</button>
+                                    <label class="rememberme" for="rememberme"><input type="checkbox" id="rememberme"> Remember me </label>
+                                    <p class="aa-lost-password"><a href="#">Lost your password?</a></p>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="aa-myaccount-register">
+                                <h4>Register</h4>
+                                <form action="{{servlet-context}}/register" method="post" class="aa-login-form">
+                                    {% csrf-field %}
+                                    <label for="">Email address<span>*</span></label>
+                                    <input type="text" name="email" placeholder="Email" {% if reg-errors %}value="{{email}}"{% endif %}>
+                                    {% if reg-errors.email %}
+                                    <div class="alert alert-danger">{{reg-errors.email|join}}</div>
+                                    {% endif %}
+                                    <label for="">Password<span>*</span></label>
+                                    <input type="password" name="password" placeholder="Password">
+                                    {% if reg-errors.password %}
+                                    <div class="alert alert-danger">{{reg-errors.password|join}}</div>
+                                    {% endif %}
+                                    <button type="submit" class="aa-browse-btn">Register</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- / Cart view section -->
+{% endblock %}

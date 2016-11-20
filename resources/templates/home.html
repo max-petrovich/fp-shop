@@ -1,8 +1,5 @@
-{% extends "base.html" %}
+{% extends "layout.html" %}
 {% block content %}
-<div class="row">
-  <div class="col-sm-12">
-    {{docs|markdown}}
-  </div>
-</div>
+  {% include "products-section.html" %}
+  {% include "popular.html" %}
 {% endblock %}
