@@ -27,7 +27,6 @@
                                     {% endif %}
                                     <button type="submit" class="aa-browse-btn">Login</button>
                                     <label class="rememberme" for="rememberme"><input type="checkbox" id="rememberme"> Remember me </label>
-                                    <p class="aa-lost-password"><a href="#">Lost your password?</a></p>
                                 </form>
                             </div>
                         </div>
@@ -36,11 +35,25 @@
                                 <h4>Register</h4>
                                 <form action="{{servlet-context}}/register" method="post" class="aa-login-form">
                                     {% csrf-field %}
+
+                                    <label for="">Name<span>*</span></label>
+                                    <input type="text" name="name" placeholder="Your name" {% if reg-errors %}value="{{name}}"{% endif %}>
+                                    {% if reg-errors.name %}
+                                    <div class="alert alert-danger">{{reg-errors.name|join}}</div>
+                                    {% endif %}
+
+                                    <label for="">Last name<span>*</span></label>
+                                    <input type="text" name="last_name" placeholder="Your last name" {% if reg-errors %}value="{{last_name}}"{% endif %}>
+                                    {% if reg-errors.last_name %}
+                                    <div class="alert alert-danger">{{reg-errors.last_name|join}}</div>
+                                    {% endif %}
+
                                     <label for="">Email address<span>*</span></label>
                                     <input type="text" name="email" placeholder="Email" {% if reg-errors %}value="{{email}}"{% endif %}>
                                     {% if reg-errors.email %}
                                     <div class="alert alert-danger">{{reg-errors.email|join}}</div>
                                     {% endif %}
+
                                     <label for="">Password<span>*</span></label>
                                     <input type="password" name="password" placeholder="Password">
                                     {% if reg-errors.password %}

@@ -3,16 +3,21 @@
     [clojure.java.jdbc :as jdbc]
     [conman.core :as conman]
     [shop.config :refer [env]]
-    [mount.core :refer [defstate]])
+    [mount.core :refer [defstate]]
+    [korma.db :as kdb])
   (:import [java.sql
             BatchUpdateException
             PreparedStatement]))
 
 (defstate ^:dynamic *db*
-           :start (conman/connect! {:jdbc-url (env :database-url)})
-           :stop (conman/disconnect! *db*))
+          :start (kdb/defdb kdb (env :db-spec))
+          ;:stop (conman/disconnect! *db*)
+          )
 
-(conman/bind-connection *db* "sql/queries.sql")
+
+
+
+;(conman/bind-connection *db* "sql/queries.sql")
 
 (defn to-date [^java.sql.Date sql-date]
   (-> sql-date (.getTime) (java.util.Date.)))

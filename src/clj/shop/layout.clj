@@ -20,6 +20,7 @@
       (parser/render-file
         template
         (assoc params
+          :identity *identity*
           :page template
           :csrf-token *anti-forgery-token*
           :servlet-context *app-context*)))

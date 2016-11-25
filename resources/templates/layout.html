@@ -4,8 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Daily Shop | Home</title>
-
+    <title>RCShop</title>
     <!-- Font awesome -->
     <link href="css/font-awesome.css" rel="stylesheet">
     <!-- Bootstrap -->
@@ -20,16 +19,11 @@
     <link rel="stylesheet" type="text/css" href="css/nouislider.css">
     <!-- Theme color -->
     <link id="switcher" href="css/theme-color/default-theme.css" rel="stylesheet">
-
     <!-- Main style sheet -->
     <link href="css/style.css" rel="stylesheet">
-	
-
     <!-- Google Font -->
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -62,21 +56,6 @@
                     <div class="aa-header-top-area">
                         <!-- start header top left -->
                         <div class="aa-header-top-left">
-
-                            <!-- start currency -->
-                            <div class="aa-currency">
-                                <div class="dropdown">
-                                    <a class="btn dropdown-toggle" href="#" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                        <i class="fa fa-usd"></i>USD
-                                        <span class="caret"></span>
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                        <li><a href="#"><i class="fa fa-euro"></i>EURO</a></li>
-                                        <li><a href="#"><i class="fa fa-jpy"></i>YEN</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!-- / currency -->
                             <!-- start cellphone -->
                             <div class="cellphone hidden-xs">
                                 <p><span class="fa fa-phone"></span>+375 (33) 44-55-667</p>
@@ -86,11 +65,15 @@
                         <!-- / header top left -->
                         <div class="aa-header-top-right">
                             <ul class="aa-head-top-nav-right">
+                                {% if identity %}
                                 <li><a href="account.html">My Account</a></li>
                                 <li class="hidden-xs"><a href="wishlist.html">Wishlist</a></li>
                                 <li class="hidden-xs"><a href="cart.html">My Cart</a></li>
                                 <li class="hidden-xs"><a href="checkout.html">Checkout</a></li>
+                                <li><a href="{{servlet-context}}/logout">Logout</a></li>
+                                {% else %}
                                 <li><a href="" data-toggle="modal" data-target="#login-modal">Login</a></li>
+                                {% endif %}
                             </ul>
                         </div>
                     </div>
@@ -111,44 +94,24 @@
                             <!-- Text based logo -->
                             <a href="{{servlet-context}}/">
                                 <span class="fa fa-shopping-cart"></span>
-                                <p>RC<strong>Shop</strong> <span>Управляемые модели</span></p>
+                                <p>RC<strong>Shop</strong> <span>Controlled models</span></p>
                             </a>
                         </div>
                         <!-- / logo  -->
+                        {% if identity %}
                         <!-- cart box -->
                         <div class="aa-cartbox">
                             <a class="aa-cart-link" href="#">
                                 <span class="fa fa-shopping-basket"></span>
-                                <span class="aa-cart-title">Корзина</span>
-                                <span class="aa-cart-notify">2</span>
+                                <span class="aa-cart-title">Cart</span>
                             </a>
-                            <div class="aa-cartbox-summary">
-                                <ul>
-                                    <li>
-                                        <a class="aa-cartbox-img" href="#"><img src="img/woman-small-2.jpg" alt="img"></a>
-                                        <div class="aa-cartbox-info">
-                                            <h4><a href="#">Product Name</a></h4>
-                                            <p>1 x $250</p>
-                                        </div>
-                                        <a class="aa-remove-product" href="#"><span class="fa fa-times"></span></a>
-                                    </li>
-                                    <li>
-                      <span class="aa-cartbox-total-title">
-                        Total
-                      </span>
-                                        <span class="aa-cartbox-total-price">
-                        $500
-                      </span>
-                                    </li>
-                                </ul>
-                                <a class="aa-cartbox-checkout aa-primary-btn" href="checkout.html">Checkout</a>
-                            </div>
                         </div>
                         <!-- / cart box -->
+                        {% endif %}
                         <!-- search box -->
                         <div class="aa-search-box">
                             <form action="">
-                                <input type="text" name="" id="" placeholder="Search here ex. 'man' ">
+                                <input type="text" name="" id="" placeholder="Search here">
                                 <button type="submit"><span class="fa fa-search"></span></button>
                             </form>
                         </div>
@@ -178,7 +141,7 @@
                 <div class="navbar-collapse collapse">
                     <!-- Left nav -->
                     <ul class="nav navbar-nav">
-                        <li><a href="{{servlet-context}}">Главная</a></li>
+                        <li><a href="{{servlet-context}}">Home</a></li>
                         <li><a href="#">Men <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">Casual</a></li>
@@ -213,16 +176,17 @@
             <div class="modal-body">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 <h4>Login or Register</h4>
-                <form class="aa-login-form" action="">
-                    <label for="">Username or Email address<span>*</span></label>
-                    <input type="text" placeholder="Username or email">
+                <form class="aa-login-form" action="{{servlet-context}}/login" method="post">
+                    {% csrf-field %}
+                    <label for="">Email address<span>*</span></label>
+                    <input type="text" name="email" placeholder="Email">
                     <label for="">Password<span>*</span></label>
-                    <input type="password" placeholder="Password">
+                    <input type="password" name="password" placeholder="Password">
                     <button class="aa-browse-btn" type="submit">Login</button>
                     <label for="rememberme" class="rememberme"><input type="checkbox" id="rememberme"> Remember me </label>
-                    <p class="aa-lost-password"><a href="#">Lost your password?</a></p>
+
                     <div class="aa-register-now">
-                        Don't have an account?<a href="account.html">Register now!</a>
+                        Don't have an account?<a href="{{servlet-context}}/account">Register now!</a>
                     </div>
                 </form>
             </div>
