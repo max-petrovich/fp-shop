@@ -17,16 +17,15 @@
 
 (def app-routes
   (routes
-    (-> #'home-routes
-        (wrap-routes middleware/wrap-csrf)
-        (wrap-routes middleware/wrap-formats))
     (-> #'admin-routes
         (wrap-routes middleware/wrap-csrf)
         (wrap-routes middleware/wrap-formats)
         (wrap-routes middleware/wrap-admin))
+    (-> #'home-routes
+        (wrap-routes middleware/wrap-csrf)
+        (wrap-routes middleware/wrap-formats))
     (route/not-found
-      (:body
-        (layout/render "404.html")))))
+      (layout/error-page {:status 404 :title "Not found" :message "ooops"}))))
 
 
 (defn app [] (middleware/wrap-base #'app-routes))

@@ -12,3 +12,6 @@
   height: 200px;
   padding: 10px;
   width: 100%;}
+
+ .aa-product-img img {
+ max-height: 300px;}

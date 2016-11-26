@@ -2,34 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a3d7968-4af1-440d-b31b-a65e19684f37" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/photos/1480159393236_4-bmw-3er-f30-aerodinamicheskij-obves-m-stil.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/photos/1480159491128_5-bmw-3er-f30-aerodinamicheskij-obves-m-stil.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/photos/1480159557230_4-bmw-3er-f30-aerodinamicheskij-obves-m-stil.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/photos/1480160563241_4-bmw-3er-f30-aerodinamicheskij-obves-m-stil.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/photos/1480160858582_4-bmw-3er-f30-aerodinamicheskij-obves-m-stil.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/storage/photos/1480161192206_4-bmw-3er-f30-aerodinamicheskij-obves-m-stil.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/public/css/my-style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/templates/product/add.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/templates/product/form.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/clj/shop/db/entities.clj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/clj/shop/db/protocols/category.clj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/clj/shop/db/repository/category.clj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/clj/shop/db/repository/products.clj" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/clj/shop/request_validators.clj" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/clj/shop/db/models/users.clj" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/public/images/no-avatar.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/public/storage/photos/1480159393236_4-bmw-3er-f30-aerodinamicheskij-obves-m-stil.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/public/storage/photos/1480159491128_5-bmw-3er-f30-aerodinamicheskij-obves-m-stil.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/public/storage/photos/1480159557230_4-bmw-3er-f30-aerodinamicheskij-obves-m-stil.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/public/storage/photos/1480160563241_4-bmw-3er-f30-aerodinamicheskij-obves-m-stil.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/public/storage/photos/1480160858582_4-bmw-3er-f30-aerodinamicheskij-obves-m-stil.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/public/storage/photos/1480161192206_4-bmw-3er-f30-aerodinamicheskij-obves-m-stil.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/public/storage/photos/1480169455713_dJpS6DXP2g8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/public/storage/photos/1480169908268_wGdt2tusZs4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/public/storage/photos/1480170333112_7-VKuSF8Xgs.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Leiningen__clj_time_0_12_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Leiningen__me_raynes_fs_1_4_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_tukaani_xz_1_5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/templates/product/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/templates/product/show.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/clj/shop/controllers/account_controller.clj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/clj/shop/controllers/home_controller.clj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/clj/shop/controllers/products_controller.clj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/clj/shop/db/protocols/comments.clj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/clj/shop/db/repository/comments.clj" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__clj_time_0_9_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/templates/popular.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.clj" afterPath="$PROJECT_DIR$/project.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/migrations/20161120151633-init-project.up.sql" afterPath="$PROJECT_DIR$/resources/migrations/20161120151633-init-project.up.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/public/css/my-style.css" afterPath="$PROJECT_DIR$/resources/public/css/my-style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/templates/home.html" afterPath="$PROJECT_DIR$/resources/templates/home.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/templates/layout.html" afterPath="$PROJECT_DIR$/resources/templates/layout.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/templates/products-section.html" afterPath="$PROJECT_DIR$/resources/templates/products-section.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shop.iml" afterPath="$PROJECT_DIR$/shop.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/clj/shop/db/core.clj" afterPath="$PROJECT_DIR$/src/clj/shop/db/core.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/clj/shop/db/protocols/common.clj" afterPath="$PROJECT_DIR$/src/clj/shop/db/protocols/common.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/clj/shop/db/repository/users.clj" afterPath="$PROJECT_DIR$/src/clj/shop/db/repository/users.clj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/clj/shop/db/entities.clj" afterPath="$PROJECT_DIR$/src/clj/shop/db/entities.clj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/clj/shop/handler.clj" afterPath="$PROJECT_DIR$/src/clj/shop/handler.clj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/clj/shop/middleware.clj" afterPath="$PROJECT_DIR$/src/clj/shop/middleware.clj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/clj/shop/layout.clj" afterPath="$PROJECT_DIR$/src/clj/shop/layout.clj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/clj/shop/request_validators.clj" afterPath="$PROJECT_DIR$/src/clj/shop/request_validators.clj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/clj/shop/routes/admin.clj" afterPath="$PROJECT_DIR$/src/clj/shop/routes/admin.clj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/clj/shop/routes/home.clj" afterPath="$PROJECT_DIR$/src/clj/shop/routes/home.clj" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_java_jdbc_0_7_0_alpha1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_clojure_java_jdbc_0_6_1.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__joda_time_2_9_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Leiningen__joda_time_2_9_4.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_apache_commons_commons_compress_1_9.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Leiningen__org_apache_commons_commons_compress_1_8.xml" />
     </list>
     <ignored path="shop.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,51 +57,64 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="admin.clj" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/clj/shop/routes/admin.clj">
+      <file leaf-file-name="products_controller.clj" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/clj/shop/controllers/products_controller.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="35" column="28" lean-forward="false" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="35" />
+            <state relative-caret-position="309">
+              <caret line="49" column="6" lean-forward="false" selection-start-line="49" selection-start-column="6" selection-end-line="49" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.clj" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/clj/shop/routes/home.clj">
+      <file leaf-file-name="account_controller.clj" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/clj/shop/controllers/account_controller.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+            <state relative-caret-position="462">
+              <caret line="38" column="53" lean-forward="false" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="53" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="comments.clj" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/clj/shop/db/repository/comments.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="24" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="entities.clj" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/clj/shop/db/entities.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/templates/product/show.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="30" column="48" lean-forward="false" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
+              <folding>
+                <element signature="e#2310#2317#0" expanded="true" />
+                <element signature="e#2330#2337#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/templates/layout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="166" column="39" lean-forward="false" selection-start-line="166" selection-start-column="31" selection-end-line="166" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="core.clj" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/clj/shop/db/core.clj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="2" lean-forward="true" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/templates/product/add.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="81" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="81" />
+            <state relative-caret-position="306">
+              <caret line="81" column="96" lean-forward="false" selection-start-line="81" selection-start-column="96" selection-end-line="81" selection-end-column="96" />
               <folding />
             </state>
           </provider>
@@ -111,27 +132,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>db-spec</find>
-      <find>jdbc</find>
-      <find>hugsql</find>
-      <find>get</find>
-      <find>repos</find>
-      <find>jdb</find>
-      <find>mig</find>
-      <find>(str (first (.get-by-email users-repository &quot;unrelaxby@gmail.com&quot;)))</find>
-      <find>env</find>
-      <find>java</find>
-      <find>identity</find>
-      <find>gale</find>
-      <find>*db*</find>
-      <find>repl</find>
-      <find>assoc</find>
-      <find>db</find>
-      <find>wrap-authentication</find>
-      <find>wrap</find>
-      <find>wrap-csrf</find>
-      <find>response</find>
-      <find>to-date</find>
       <find>connect</find>
       <find>reconnect!</find>
       <find>wrap-</find>
@@ -141,9 +141,31 @@
       <find>ring.middleware</find>
       <find>params</find>
       <find>wi</find>
+      <find>session-backend</find>
+      <find>authenticated</find>
+      <find>layout</find>
+      <find>Lorem ipsum dolor s</find>
+      <find>related</find>
+      <find>wis</find>
+      <find>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</find>
+      <find>*app-context*</find>
+      <find>*identity*</find>
+      <find>*ide</find>
+      <find>*app</find>
+      <find>wrap-ide</find>
+      <find>layo</find>
+      <find>app-categories</find>
+      <find>*app-categories*</find>
+      <find>wrap-restricted</find>
+      <find>merge</find>
+      <find>tags</find>
+      <find>top ra</find>
+      <find>comments-control</find>
+      <find>auth</find>
     </findStrings>
     <dirStrings>
       <dir>E:\Study\BSUIR\5 курс\9 семестр\ФП\shop\src\clj\shop</dir>
+      <dir>E:\Study\BSUIR\5 курс\9 семестр\ФП\shop\src\clj\shop\routes</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -157,18 +179,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/migrations/20161120151633-init-project.down.sql" />
-        <option value="$PROJECT_DIR$/src/clj/shop/routes/account.clj" />
-        <option value="$PROJECT_DIR$/resources/sql/queries.sql" />
-        <option value="$PROJECT_DIR$/env/dev/resources/config.edn" />
-        <option value="$PROJECT_DIR$/resources/templates/home.html" />
-        <option value="$PROJECT_DIR$/src/clj/shop/layout.clj" />
-        <option value="$PROJECT_DIR$/resources/templates/404.html" />
-        <option value="$PROJECT_DIR$/resources/templates/base.html" />
-        <option value="$PROJECT_DIR$/src/clj/shop/db/repo_protocols/products_protocol.clj" />
-        <option value="$PROJECT_DIR$/src/clj/shop/db/repos/products_repo.clj" />
-        <option value="$PROJECT_DIR$/src/clj/shop/db/dto/user.clj" />
-        <option value="$PROJECT_DIR$/src/clj/shop/db/protocols/users_protocol.clj" />
         <option value="$PROJECT_DIR$/src/clj/shop/db/protocols/model_protocol.clj" />
         <option value="$PROJECT_DIR$/src/clj/shop/db/repository/user_repository.clj" />
         <option value="$PROJECT_DIR$/src/clj/shop/db/repository/user.clj" />
@@ -190,23 +200,35 @@
         <option value="$PROJECT_DIR$/src/clj/shop/db/models/users.clj" />
         <option value="$PROJECT_DIR$/src/clj/shop/db/models/products.clj" />
         <option value="$PROJECT_DIR$/src/clj/shop/db/protocols/common.clj" />
-        <option value="$PROJECT_DIR$/src/clj/shop/db/repository/products.clj" />
         <option value="$PROJECT_DIR$/src/clj/shop/db/repository/users.clj" />
-        <option value="$PROJECT_DIR$/resources/public/css/my-style.css" />
-        <option value="$PROJECT_DIR$/src/clj/shop/db/entities.clj" />
         <option value="$PROJECT_DIR$/src/clj/shop/db/protocols/category.clj" />
         <option value="$PROJECT_DIR$/resources/templates/product/form.html" />
-        <option value="$PROJECT_DIR$/src/clj/shop/request_validators.clj" />
         <option value="$PROJECT_DIR$/src/clj/shop/db/core.clj" />
         <option value="$PROJECT_DIR$/profiles.clj" />
-        <option value="$PROJECT_DIR$/src/clj/shop/handler.clj" />
-        <option value="$PROJECT_DIR$/src/clj/shop/db/repository/category.clj" />
-        <option value="$PROJECT_DIR$/src/clj/shop/middleware.clj" />
         <option value="$PROJECT_DIR$/resources/templates/product/add.html" />
         <option value="$PROJECT_DIR$/project.clj" />
         <option value="$PROJECT_DIR$/resources/migrations/20161120151633-init-project.up.sql" />
+        <option value="$PROJECT_DIR$/src/clj/shop/controllers/auth_controller.clj" />
+        <option value="$PROJECT_DIR$/src/clj/shop/controllers/account_controller.clj" />
+        <option value="$PROJECT_DIR$/src/clj/shop/db/protocols/comments.clj" />
+        <option value="$PROJECT_DIR$/src/clj/shop/db/repository/category.clj" />
+        <option value="$PROJECT_DIR$/src/clj/shop/middleware.clj" />
         <option value="$PROJECT_DIR$/src/clj/shop/routes/admin.clj" />
+        <option value="$PROJECT_DIR$/src/clj/shop/handler.clj" />
+        <option value="$PROJECT_DIR$/src/clj/shop/layout.clj" />
+        <option value="$PROJECT_DIR$/resources/templates/home.html" />
+        <option value="$PROJECT_DIR$/resources/public/css/my-style.css" />
+        <option value="$PROJECT_DIR$/src/clj/shop/controllers/home_controller.clj" />
+        <option value="$PROJECT_DIR$/resources/templates/products-section.html" />
+        <option value="$PROJECT_DIR$/resources/templates/product/index.html" />
+        <option value="$PROJECT_DIR$/src/clj/shop/request_validators.clj" />
+        <option value="$PROJECT_DIR$/src/clj/shop/controllers/comments_controller.clj" />
         <option value="$PROJECT_DIR$/src/clj/shop/routes/home.clj" />
+        <option value="$PROJECT_DIR$/src/clj/shop/db/repository/comments.clj" />
+        <option value="$PROJECT_DIR$/src/clj/shop/controllers/products_controller.clj" />
+        <option value="$PROJECT_DIR$/src/clj/shop/db/repository/products.clj" />
+        <option value="$PROJECT_DIR$/src/clj/shop/db/entities.clj" />
+        <option value="$PROJECT_DIR$/resources/templates/product/show.html" />
         <option value="$PROJECT_DIR$/resources/templates/layout.html" />
       </list>
     </option>
@@ -235,8 +257,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -264,6 +287,148 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="clj" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clj" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="routes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clj" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clj" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clj" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protocols" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clj" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -323,7 +488,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -609,7 +773,14 @@
       <option name="project" value="LOCAL" />
       <updated>1480076923301</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="[+] product adding&#10;[+] request validators&#10;[+] admin middleware">
+      <created>1480161653355</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1480161653355</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -641,7 +812,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33557048" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2784566" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2823151" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -671,7 +842,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[+] auth, register, logout" />
     <MESSAGE value="[+] korma as default db orm&#10;[+] user (protocol, model, repository)&#10;[*] edit template" />
-    <option name="LAST_COMMIT_MESSAGE" value="[+] korma as default db orm&#10;[+] user (protocol, model, repository)&#10;[*] edit template" />
+    <MESSAGE value="[+] product adding&#10;[+] request validators&#10;[+] admin middleware" />
+    <option name="LAST_COMMIT_MESSAGE" value="[+] product adding&#10;[+] request validators&#10;[+] admin middleware" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -682,41 +854,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/clj/shop/db/package-info.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/metosin/ring-http-response/0.8.0/ring-http-response-0.8.0.jar!/ring/util/http_response.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clj/shop/db/repository/users_repository.clj" />
-    <entry file="file://$PROJECT_DIR$/src/clj/shop/db/protocols/common_protocol.clj" />
-    <entry file="file://$PROJECT_DIR$/src/clj/shop/db/repo_protocols/common_protocol.clj" />
-    <entry file="file://$PROJECT_DIR$/src/clj/shop/db/repos/users_repo.clj" />
-    <entry file="file://$PROJECT_DIR$/src/clj/shop/db/records/dude.clj" />
-    <entry file="file://$PROJECT_DIR$/src/clj/shop/db/records/person.clj" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_92/src.zip!/java/sql/Array.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="69" column="17" lean-forward="false" selection-start-line="69" selection-start-column="17" selection-end-line="69" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/zaxxer/HikariCP/2.5.1/HikariCP-2.5.1.jar!/com/zaxxer/hikari/HikariDataSource.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="30" column="11" lean-forward="false" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/sql/queries.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="19" lean-forward="true" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/clj/shop/db/repository/repo.clj" />
     <entry file="jar://$MAVEN_REPOSITORY$/buddy/buddy-auth/1.2.0/buddy-auth-1.2.0.jar!/buddy/auth.clj">
       <provider selected="true" editor-type-id="text-editor">
@@ -753,21 +890,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/public/css/my-style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clj/shop/db/protocols/common.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/clj/shop/db/protocols/users.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -776,62 +898,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/clj/shop/db/entities.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="33" lean-forward="false" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/clj/shop/db/protocols/category.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="23" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clj/shop/layout.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="6" lean-forward="false" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/templates/account.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="41" column="98" lean-forward="true" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="98" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/templates/products-section.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clj/shop/request_validators.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="48" lean-forward="false" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clj/shop/db/repository/products.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="50" lean-forward="true" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clj/shop/db/repository/users.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -839,7 +909,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="309">
           <caret line="75" column="16" lean-forward="false" selection-start-line="75" selection-start-column="16" selection-end-line="75" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -847,7 +916,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
           <caret line="105" column="10" lean-forward="false" selection-start-line="105" selection-start-column="10" selection-end-line="105" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -855,31 +923,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="101" lean-forward="false" selection-start-line="4" selection-start-column="101" selection-end-line="4" selection-end-column="101" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clj/shop/db/repository/category.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clj/shop/middleware.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="75" lean-forward="true" selection-start-line="10" selection-start-column="75" selection-end-line="10" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clj/shop/handler.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="27" lean-forward="false" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -887,7 +930,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="122">
           <caret line="80" column="6" lean-forward="false" selection-start-line="80" selection-start-column="6" selection-end-line="80" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -895,7 +937,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="30" lean-forward="true" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -907,6 +948,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/migrations/20161120151633-init-project.up.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="83" column="53" lean-forward="false" selection-start-line="83" selection-start-column="53" selection-end-line="83" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clj/shop/controllers/max_sss.clj" />
+    <entry file="file://$PROJECT_DIR$/src/clj/shop/db/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="2" lean-forward="true" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/clj/shop/core.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="326">
@@ -915,10 +971,114 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/migrations/20161120151633-init-project.up.sql">
+    <entry file="file://$PROJECT_DIR$/src/clj/shop/db/protocols/common.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="83" column="53" lean-forward="false" selection-start-line="83" selection-start-column="53" selection-end-line="83" selection-end-column="53" />
+        <state relative-caret-position="119">
+          <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clj/shop/db/repository/category.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clj/shop/middleware.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="66" column="21" lean-forward="false" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clj/shop/handler.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="44" lean-forward="false" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clj/shop/layout.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="68" lean-forward="false" selection-start-line="24" selection-start-column="68" selection-end-line="24" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="39" lean-forward="false" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/templates/product/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="35" column="28" lean-forward="false" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/templates/products-section.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="52" lean-forward="true" selection-start-line="15" selection-start-column="40" selection-end-line="26" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/public/css/my-style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="15" lean-forward="false" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clj/shop/controllers/home_controller.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="89" lean-forward="true" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/templates/account.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="36" column="52" lean-forward="true" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clj/shop/controllers/comments_controller.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="14" lean-forward="false" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clj/shop/request_validators.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="40" lean-forward="false" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/compojure/compojure/1.5.1/compojure-1.5.1.jar!/compojure/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="164" column="10" lean-forward="false" selection-start-line="164" selection-start-column="10" selection-end-line="164" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -933,40 +1093,99 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/templates/product/add.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="81" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="81" />
+        <state relative-caret-position="204">
+          <caret line="12" column="27" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="12" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/clj/shop/db/core.clj">
+    <entry file="file://$PROJECT_DIR$/src/clj/shop/db/protocols/comments.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="2" lean-forward="true" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/templates/layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="166" column="39" lean-forward="false" selection-start-line="166" selection-start-column="31" selection-end-line="166" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clj/shop/routes/home.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+        <state relative-caret-position="34">
+          <caret line="2" column="30" lean-forward="true" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/clj/shop/routes/admin.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="35" column="28" lean-forward="false" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="35" />
+        <state relative-caret-position="102">
+          <caret line="6" column="64" lean-forward="true" selection-start-line="6" selection-start-column="64" selection-end-line="6" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clj/shop/routes/home.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="74" lean-forward="true" selection-start-line="5" selection-start-column="74" selection-end-line="5" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clj/shop/db/repository/comments.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="24" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clj/shop/db/repository/users.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clj/shop/controllers/products_controller.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="49" column="6" lean-forward="false" selection-start-line="49" selection-start-column="6" selection-end-line="49" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clj/shop/controllers/account_controller.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="38" column="53" lean-forward="false" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clj/shop/db/repository/products.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="40" lean-forward="true" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clj/shop/db/entities.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/templates/product/show.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="30" column="48" lean-forward="false" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
+          <folding>
+            <element signature="e#2310#2317#0" expanded="true" />
+            <element signature="e#2330#2337#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/templates/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="81" column="96" lean-forward="false" selection-start-line="81" selection-start-column="96" selection-end-line="81" selection-end-column="96" />
           <folding />
         </state>
       </provider>

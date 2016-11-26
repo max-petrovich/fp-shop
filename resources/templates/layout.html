@@ -79,7 +79,7 @@
                                 <li><a href="account.html">My Account</a></li>
                                 <li class="hidden-xs"><a href="cart.html">My Cart</a></li>
                                 <li class="hidden-xs"><a href="checkout.html">Checkout</a></li>
-                                <li><a href="{{servlet-context}}/logout">Logout</a></li>
+                                <li><a href="{{servlet-context}}/logout">Logout ({{identity.name}})</a></li>
                                 {% else %}
                                 <li><a href="" data-toggle="modal" data-target="#login-modal">Login</a></li>
                                 {% endif %}
@@ -151,18 +151,18 @@
                     <!-- Left nav -->
                     <ul class="nav navbar-nav navbar-left">
                         <li><a href="{{servlet-context}}">Home</a></li>
-                        <li><a href="#">Men <span class="caret"></span></a>
+                        {% for cat in categories %}
+                        <li><a href="{{servlet-context}}/category/{{cat.id}}">{{cat.name}}
+                            {% if cat.childs %}
+                            <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Casual</a></li>
-                                <li><a href="#">And more.. <span class="caret"></span></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Sleep Wear</a></li>
-                                        <li><a href="#">Sandals</a></li>
-                                        <li><a href="#">Loafers</a></li>
-                                    </ul>
-                                </li>
+                                {% for cat-child in cat.childs %}
+                                <li><a href="{{servlet-context}}/category/{{cat-child.id}}">{{cat-child.name}}</a></li>
+                                {% endfor %}
                             </ul>
+                            {% endif %}
                         </li>
+                        {% endfor %}
                         {% ifequal identity.role 1 %}
                         <li><a href="#">Manage <span class="caret"></span></a>
                             <ul class="dropdown-menu">

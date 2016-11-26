@@ -28,7 +28,7 @@
     <orderEntry type="library" name="Leiningen: cheshire:5.5.0" level="project" />
     <orderEntry type="library" name="Leiningen: circleci/clj-yaml:0.5.5" level="project" />
     <orderEntry type="library" name="Leiningen: clj-stacktrace:0.2.8" level="project" />
-    <orderEntry type="library" name="Leiningen: clj-time:0.9.0" level="project" />
+    <orderEntry type="library" name="Leiningen: clj-time:0.12.2" level="project" />
     <orderEntry type="library" name="Leiningen: clj-tuple:0.2.2" level="project" />
     <orderEntry type="library" name="Leiningen: clojure-complete:0.2.4" level="project" />
     <orderEntry type="library" name="Leiningen: clojure-msgpack:1.1.2" level="project" />
@@ -77,20 +77,21 @@
     <orderEntry type="library" name="Leiningen: io.undertow/undertow-servlet:1.3.23.Final" level="project" />
     <orderEntry type="library" name="Leiningen: io.undertow/undertow-websockets-jsr:1.3.23.Final" level="project" />
     <orderEntry type="library" name="Leiningen: javax.servlet/servlet-api:2.5" level="project" />
-    <orderEntry type="library" name="Leiningen: joda-time:2.9.3" level="project" />
+    <orderEntry type="library" name="Leiningen: joda-time:2.9.4" level="project" />
     <orderEntry type="library" name="Leiningen: json-html:0.3.9" level="project" />
     <orderEntry type="library" name="Leiningen: korma:0.4.3" level="project" />
     <orderEntry type="library" name="Leiningen: luminus-immutant:0.2.2" level="project" />
     <orderEntry type="library" name="Leiningen: luminus-migrations:0.2.8" level="project" />
     <orderEntry type="library" name="Leiningen: luminus-nrepl:0.1.4" level="project" />
     <orderEntry type="library" name="Leiningen: markdown-clj:0.9.90" level="project" />
+    <orderEntry type="library" name="Leiningen: me.raynes/fs:1.4.6" level="project" />
     <orderEntry type="library" name="Leiningen: medley:0.8.2" level="project" />
     <orderEntry type="library" name="Leiningen: metosin/ring-http-response:0.8.0" level="project" />
     <orderEntry type="library" name="Leiningen: migratus:0.8.32" level="project" />
     <orderEntry type="library" name="Leiningen: mount:0.1.10" level="project" />
     <orderEntry type="library" name="Leiningen: mysql/mysql-connector-java:5.1.6" level="project" />
     <orderEntry type="library" name="Leiningen: ns-tracker:0.3.0" level="project" />
-    <orderEntry type="library" name="Leiningen: org.apache.commons/commons-compress:1.9" level="project" />
+    <orderEntry type="library" name="Leiningen: org.apache.commons/commons-compress:1.8" level="project" />
     <orderEntry type="library" name="Leiningen: org.apache.commons/commons-lang3:3.1" level="project" />
     <orderEntry type="library" name="Leiningen: org.bouncycastle/bcpkix-jdk15on:1.55" level="project" />
     <orderEntry type="library" name="Leiningen: org.bouncycastle/bcprov-jdk15on:1.55" level="project" />
@@ -131,6 +132,7 @@
     <orderEntry type="library" name="Leiningen: org.projectodd.wunderboss/wunderboss-web:0.12.2" level="project" />
     <orderEntry type="library" name="Leiningen: org.slf4j/slf4j-api:1.7.7" level="project" />
     <orderEntry type="library" name="Leiningen: org.tobereplaced/lettercase:1.0.0" level="project" />
+    <orderEntry type="library" name="Leiningen: org.tukaani/xz:1.5" level="project" />
     <orderEntry type="library" name="Leiningen: org.webjars.bower/tether:1.3.7" level="project" />
     <orderEntry type="library" name="Leiningen: org.webjars/bootstrap:4.0.0-alpha.5" level="project" />
     <orderEntry type="library" name="Leiningen: org.webjars/font-awesome:4.6.3" level="project" />

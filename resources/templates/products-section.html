@@ -7,73 +7,26 @@
                     <div class="aa-product-area">
                         <div class="aa-product-inner">
                             <!-- start prduct navigation -->
-                            <ul class="nav nav-tabs aa-products-tab">
-                                <li class="active"><a href="#men" data-toggle="tab">Men</a></li>
-                                <li><a href="#women" data-toggle="tab">Women</a></li>
-                                <li><a href="#sports" data-toggle="tab">Sports</a></li>
-                                <li><a href="#electronics" data-toggle="tab">Electronics</a></li>
-                            </ul>
+                            <br>
                             <!-- Tab panes -->
                             <div class="tab-content">
                                 <!-- Start men product category -->
                                 <div class="tab-pane fade in active" id="men">
                                     <ul class="aa-product-catg">
-                                        <!-- start single product item -->
+                                        {% for product in products %}
                                         <li>
                                             <figure>
-                                                <a class="aa-product-img" href="#"><img src="img/man/polo-shirt-2.png" alt="polo shirt img"></a>
+                                                <a class="aa-product-img" href="{{servlet-context}}/product/{{product.id}}"><img src="{{servlet-context}}/{{product.photo}}"></a>
                                                 <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
                                                 <figcaption>
-                                                    <h4 class="aa-product-title"><a href="#">Polo T-Shirt</a></h4>
-                                                    <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
+                                                    <h4 class="aa-product-title"><a href="#">{{product.title}}</a></h4>
+                                                    <span class="aa-product-price">${{product.price}}</span>
                                                 </figcaption>
                                             </figure>
-
-                                            <!-- product badge -->
-                                            <span class="aa-badge aa-sale" href="#">SALE!</span>
                                         </li>
-                                        <!-- start single product item -->
-                                        <li>
-                                            <figure>
-                                                <a class="aa-product-img" href="#"><img src="img/man/t-shirt-1.png" alt="polo shirt img"></a>
-                                                <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
-                                                <figcaption>
-                                                    <h4 class="aa-product-title"><a href="#">T-Shirt</a></h4>
-                                                    <span class="aa-product-price">$45.50</span>
-                                                </figcaption>
-                                            </figure>
-
-                                            <!-- product badge -->
-                                            <span class="aa-badge aa-sold-out" href="#">Sold Out!</span>
-                                        </li>
-                                        <!-- start single product item -->
-                                        <li>
-                                            <figure>
-                                                <a class="aa-product-img" href="#"><img src="img/man/polo-shirt-1.png" alt="polo shirt img"></a>
-                                                <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
-                                                <figcaption>
-                                                    <h4 class="aa-product-title"><a href="#">Polo T-Shirt</a></h4>
-                                                    <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
-                                                </figcaption>
-                                            </figure>
-
-                                        </li>
-                                        <!-- start single product item -->
-                                        <li>
-                                            <figure>
-                                                <a class="aa-product-img" href="#"><img src="img/man/polo-shirt-4.png" alt="polo shirt img"></a>
-                                                <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
-                                                <figcaption>
-                                                    <h4 class="aa-product-title"><a href="#">Polo T-Shirt</a></h4>
-                                                    <span class="aa-product-price">$45.50</span><span class="aa-product-price"><del>$65.50</del></span>
-                                                </figcaption>
-                                            </figure>
-
-                                            <!-- product badge -->
-                                            <span class="aa-badge aa-hot" href="#">HOT!</span>
-                                        </li>
+                                        {% endfor %}
                                     </ul>
-                                    <a class="aa-browse-btn" href="#">Browse all Product <span class="fa fa-long-arrow-right"></span></a>
+                                    <a class="aa-browse-btn" href="{{servlet-context}}/products">Browse all Product <span class="fa fa-long-arrow-right"></span></a>
                                 </div>
                                 <!-- / men product category -->
                         </div>

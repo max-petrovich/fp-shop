@@ -28,3 +28,9 @@
       :description [v/required [v/min-count 6]]
       :price [v/required [v/matches #"^\d+$"]]
       :article [v/required [v/matches #"^\d+$"]])))
+
+(defn validate-comments-form [params]
+  (first
+    (b/validate
+      params
+      :text [v/required [v/min-count 6]])))
