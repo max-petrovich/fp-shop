@@ -13,6 +13,7 @@
             [buddy.auth.accessrules :refer [restrict]]
             [buddy.auth :refer [authenticated?]]
             [buddy.auth.backends.session :refer [session-backend]]
+            [ring.util.http-response :as response]
             [shop.layout :refer [*identity*]])
   (:import [javax.servlet ServletContext]))
 
@@ -91,3 +92,11 @@
             (dissoc :session)))
       wrap-context
       wrap-internal-error))
+
+;----
+
+(defn wrap-admin [handler]
+  (fn [request]
+    (if-not (:identity request)
+      (response/found "/account")
+      (handler request))))

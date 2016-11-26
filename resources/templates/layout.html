@@ -6,21 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>RCShop</title>
     <!-- Font awesome -->
-    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="/css/font-awesome.css" rel="stylesheet">
     <!-- Bootstrap -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="/css/bootstrap.css" rel="stylesheet">
     <!-- SmartMenus jQuery Bootstrap Addon CSS -->
-    <link href="css/jquery.smartmenus.bootstrap.css" rel="stylesheet">
+    <link href="/css/jquery.smartmenus.bootstrap.css" rel="stylesheet">
     <!-- Product view slider -->
-    <link rel="stylesheet" type="text/css" href="css/jquery.simpleLens.css">
+    <link rel="stylesheet" type="text/css" href="/css/jquery.simpleLens.css">
     <!-- slick slider -->
-    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="/css/slick.css">
     <!-- price picker slider -->
-    <link rel="stylesheet" type="text/css" href="css/nouislider.css">
+    <link rel="stylesheet" type="text/css" href="/css/nouislider.css">
     <!-- Theme color -->
-    <link id="switcher" href="css/theme-color/default-theme.css" rel="stylesheet">
+    <link id="switcher" href="/css/theme-color/default-theme.css" rel="stylesheet">
     <!-- Main style sheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/my-style.css" rel="stylesheet">
     <!-- Google Font -->
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
@@ -45,6 +46,15 @@
 <a class="scrollToTop" href="#"><i class="fa fa-chevron-up"></i></a>
 <!-- END SCROLL TOP BUTTON -->
 
+{% if message %}
+<div class="container">
+    <div class="row panel-body">
+        <div class="col-lg-12">
+            <div class="alert alert-info">{{message}}</div>
+        </div>
+    </div>
+</div>
+{% endif %}
 
 <!-- Start header section -->
 <header id="aa-header">
@@ -67,7 +77,6 @@
                             <ul class="aa-head-top-nav-right">
                                 {% if identity %}
                                 <li><a href="account.html">My Account</a></li>
-                                <li class="hidden-xs"><a href="wishlist.html">Wishlist</a></li>
                                 <li class="hidden-xs"><a href="cart.html">My Cart</a></li>
                                 <li class="hidden-xs"><a href="checkout.html">Checkout</a></li>
                                 <li><a href="{{servlet-context}}/logout">Logout</a></li>
@@ -140,7 +149,7 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <!-- Left nav -->
-                    <ul class="nav navbar-nav">
+                    <ul class="nav navbar-nav navbar-left">
                         <li><a href="{{servlet-context}}">Home</a></li>
                         <li><a href="#">Men <span class="caret"></span></a>
                             <ul class="dropdown-menu">
@@ -154,6 +163,17 @@
                                 </li>
                             </ul>
                         </li>
+                        {% ifequal identity.role 1 %}
+                        <li><a href="#">Manage <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Product<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="{{servlet-context}}/product/add">Add</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        {% endifequal %}
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>
@@ -197,21 +217,21 @@
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.js"></script>
+<script src="/js/bootstrap.js"></script>
 <!-- SmartMenus jQuery plugin -->
-<script type="text/javascript" src="js/jquery.smartmenus.js"></script>
+<script type="text/javascript" src="/js/jquery.smartmenus.js"></script>
 <!-- SmartMenus jQuery Bootstrap Addon -->
-<script type="text/javascript" src="js/jquery.smartmenus.bootstrap.js"></script>
+<script type="text/javascript" src="/js/jquery.smartmenus.bootstrap.js"></script>
 <!-- Product view slider -->
-<script type="text/javascript" src="js/jquery.simpleGallery.js"></script>
-<script type="text/javascript" src="js/jquery.simpleLens.js"></script>
+<script type="text/javascript" src="/js/jquery.simpleGallery.js"></script>
+<script type="text/javascript" src="/js/jquery.simpleLens.js"></script>
 <!-- slick slider -->
-<script type="text/javascript" src="js/slick.js"></script>
+<script type="text/javascript" src="/js/slick.js"></script>
 <!-- Price picker slider -->
-<script type="text/javascript" src="js/nouislider.js"></script>
+<script type="text/javascript" src="/js/nouislider.js"></script>
 
 <!-- Custom js -->
-<script src="js/custom.js"></script>
+<script src="/js/custom.js"></script>
 
 </body>
 </html>

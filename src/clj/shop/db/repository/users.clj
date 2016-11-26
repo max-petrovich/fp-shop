@@ -1,10 +1,9 @@
 (ns shop.db.repository.users
   (:require
             [korma.core :refer :all]
-            [shop.db.models.users :refer :all]
+            [shop.db.entities :refer :all]
             [shop.db.protocols.common :refer [common-protocol]]
-            [shop.db.protocols.users :refer [users-protocol]]
-            ))
+            [shop.db.protocols.users :refer [users-protocol]]))
 
 (deftype users-repository []
 
@@ -18,8 +17,12 @@
   (insert-record [this data] (insert users
                                      (values data)))
 
-  (update-record [this data] "str update")
-  (delete-record [this id] "str delete id")
+  (update-record [this id data] (update users
+                                        (set-fields data)
+                                        (where {:id id})))
+
+  (delete-record [this id] (delete users
+                                   (where {:id id})))
 
   users-protocol
 

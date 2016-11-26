@@ -10,7 +10,7 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 --;;
 CREATE TABLE `categories` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `parent_id` int(11) NOT NULL DEFAULT '0',
   `name` varchar(150) NOT NULL,
   `description` text NOT NULL,
@@ -26,6 +26,7 @@ CREATE TABLE `delivery_types` (
 CREATE TABLE `products` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `user_id` int(11) NOT NULL,
+  `category_id` int(11) NOT NULL,
   `price` decimal(10,2) NOT NULL,
   `date` datetime NOT NULL,
   `photo` varchar(255) NOT NULL,
@@ -34,8 +35,7 @@ CREATE TABLE `products` (
   `article` varchar(100) NOT NULL,
   `comments_num` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
-  KEY `products_user_id_idx` (`user_id`),
-  CONSTRAINT `products_user_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+  KEY `products_user_id_idx` (`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 --;;
 CREATE TABLE `carts` (
@@ -45,9 +45,7 @@ CREATE TABLE `carts` (
   `date` datetime NOT NULL,
   PRIMARY KEY (`id`),
   KEY `carts_user_id_idx` (`user_id`),
-  KEY `carts_product_id_idx` (`product_id`),
-  CONSTRAINT `carts_product_id` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `carts_user_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+  KEY `carts_product_id_idx` (`product_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 --;;
 CREATE TABLE `comments` (
@@ -58,9 +56,7 @@ CREATE TABLE `comments` (
   `date` datetime NOT NULL,
   PRIMARY KEY (`id`),
   KEY `comments_user_id_idx` (`user_id`),
-  KEY `comments_product_id_idx` (`product_id`),
-  CONSTRAINT `comments_product_id` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `comments_user_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+  KEY `comments_product_id_idx` (`product_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 --;;
 CREATE TABLE `orders` (
@@ -76,9 +72,7 @@ CREATE TABLE `orders` (
   `payment_state` int(3) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `orders_user_id_idx` (`user_id`),
-  KEY `orders_delivery_type_id_idx` (`delivery_type_id`),
-  CONSTRAINT `orders_delivery_type_id` FOREIGN KEY (`delivery_type_id`) REFERENCES `delivery_types` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `orders_user_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+  KEY `orders_delivery_type_id_idx` (`delivery_type_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 --;;
 CREATE TABLE `order_products` (
@@ -87,7 +81,5 @@ CREATE TABLE `order_products` (
   `product_id` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `order_products_idx` (`order_id`),
-  KEY `ordder_products_product_id_idx` (`product_id`),
-  CONSTRAINT `ordder_products_product_id` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `order_products_order_id` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+  KEY `ordder_products_product_id_idx` (`product_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;

@@ -2,23 +2,20 @@
   (:require [shop.layout :as layout]
             [compojure.core :refer [defroutes GET POST]]
             [ring.util.http-response :as response]
-            [clojure.java.io :as io]
-            [shop.db.core :as db]
-            [bouncer.core :as b]
-            [bouncer.validators :as v]
             [buddy.hashers :as hashers]
             [buddy.auth :refer [authenticated? throw-unauthorized]]
             [buddy.auth.backends.session :refer [session-backend]]
-
+            [shop.request-validators :as rv]
             [shop.db.repository.users :refer :all]
+
             ))
 
 ; -- repository --
 (def users-repository (->users-repository))
 ; ----------------
 
-(defn home-page [req]
-  (layout/render "home.html"))
+(defn home-page [{:keys [flash] :as req}]
+  (layout/render "home.html" flash))
 
 (defn account-page [{:keys [flash] :as req}]
   (if (authenticated? req)
@@ -27,21 +24,8 @@
       "account.html"
       flash)))
 
-
-(defn test-page []
-  (str "")
-  )
-
-; ---------------- AUTH
-(defn validate-auth [params]
-  (first
-    (b/validate
-      params
-      :email [v/required v/email]
-      :password v/required)))
-
 (defn auth-user! [{:keys [params] session :session :as req }]
-  (if-let [errors (validate-auth params)]
+  (if-let [errors (rv/validate-auth params)]
     (-> (response/found "/account")
         (assoc :flash (assoc params :auth-errors errors)))
     (do
@@ -53,19 +37,8 @@
         (-> (response/found "/account")
             (assoc :flash (assoc params :auth-errors {:email "Account not exists or wrong password!"})))))))
 
-; --------------- REGISTRATION
-
-(defn validate-register [params]
-  (first
-    (b/validate
-      params
-      :name v/required
-      :last_name v/required
-      :email [v/required v/email]
-      :password [v/required [v/min-count 6]])))
-
 (defn register-user! [{:keys [params]}]
-  (let [errors (validate-register params)]
+  (let [errors (rv/validate-register params)]
     (cond
       errors (-> (response/found "/account")
                  (assoc :flash (assoc params :reg-errors errors)))
@@ -78,16 +51,16 @@
                   (assoc :flash {:message "You are successfully registred!"}))
               ))))
 
-;----------
 (defn do-logout [{session :session}]
   (-> (response/found "/")
       (assoc :session (dissoc session :identity))))
 
+
 (defroutes home-routes
-           (GET "/test" [] (test-page))
            (GET "/" request (home-page request))
            (GET "/logout" request (do-logout request))
            (GET "/account" request (account-page request))
            (POST "/login" request (auth-user! request))
-           (POST "/register" request (register-user! request)))
+           (POST "/register" request (register-user! request))
+           )
 

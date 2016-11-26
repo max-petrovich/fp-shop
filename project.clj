@@ -27,6 +27,8 @@
                  [ring-webjars "0.1.1"]
                  [ring/ring-defaults "0.2.1"]
                  [korma "0.4.3"]
+                 [me.raynes/fs "1.4.6"]
+                 [clj-time "0.12.2"]
                  [selmer "1.10.0"]]
 
   :min-lein-version "2.0.0"

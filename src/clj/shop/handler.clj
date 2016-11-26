@@ -1,5 +1,6 @@
 (ns shop.handler
-  (:require [compojure.core :refer [routes wrap-routes]]
+  (:require [shop.db.core]
+            [compojure.core :refer [routes wrap-routes]]
             [shop.layout :refer [error-page]]
             [shop.layout :as layout]
             [shop.routes.home :refer [home-routes]]
@@ -19,6 +20,10 @@
     (-> #'home-routes
         (wrap-routes middleware/wrap-csrf)
         (wrap-routes middleware/wrap-formats))
+    (-> #'admin-routes
+        (wrap-routes middleware/wrap-csrf)
+        (wrap-routes middleware/wrap-formats)
+        (wrap-routes middleware/wrap-admin))
     (route/not-found
       (:body
         (layout/render "404.html")))))

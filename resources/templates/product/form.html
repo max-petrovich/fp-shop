@@ -1,0 +1,20 @@
+<label for="">Title<span>*</span></label>
+<input type="text" name="title" value="{{flash.title}}" placeholder="Title">
+<label for="">Category<span>*</span></label>
+<select name="category_id" class="my-select">
+    {% for category in category-hierarchy %}
+    <optgroup label="{{category.name}}">
+        {% for child-category in category.childs %}
+        <option value="{{child-category.id}}" {% ifequal child-category.id flash.category_id%}selected{% endifequal %}>{{child-category.name}}</option>
+        {% endfor %}
+    </optgroup>
+    {% endfor %}
+</select>
+<label for="">Description<span>*</span></label>
+<textarea name="description" class="my-textarea" placeholder="Product description">{{flash.description}}</textarea>
+<label for="">Photo<span>*</span></label>
+<input type="file" name="photo">
+<label for="">Price<span>*</span></label>
+<input type="text" name="price" value="{{flash.price}}" placeholder="Price">
+<label for="">Article<span>*</span></label>
+<input type="text" name="article" placeholder="Article number" value="{{flash.article}}">
