@@ -23,10 +23,11 @@
       (def user (first (.get-by-email users-repository (:email params))))
 
       (if (and user (hashers/check (:password params) (:password user)))
-        (-> (response/found "/")
+        (-> (response/found ((:headers req) "referer"))
             (assoc :session (assoc session :identity user)))
         (-> (response/found "/account")
-            (assoc :flash (assoc params :auth-errors {:email "Account not exists or wrong password!"})))))))
+            (assoc :flash (assoc params :auth-errors {:email "Account not exists or wrong password!"}))))))
+  )
 
 (defn do-register-user [{:keys [params]}]
   (let [errors (rv/validate-register params)]

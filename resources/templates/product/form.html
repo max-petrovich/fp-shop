@@ -1,20 +1,28 @@
 <label for="">Title<span>*</span></label>
-<input type="text" name="title" value="{{flash.title}}" placeholder="Title">
+<input type="text" name="title" value="{% firstof flash.title product.title %}" placeholder="Title">
 <label for="">Category<span>*</span></label>
 <select name="category_id" class="my-select">
     {% for category in category-hierarchy %}
     <optgroup label="{{category.name}}">
         {% for child-category in category.childs %}
-        <option value="{{child-category.id}}" {% ifequal child-category.id flash.category_id%}selected{% endifequal %}>{{child-category.name}}</option>
+        <option value="{{child-category.id}}"
+                {% ifequal child-category.id flash.category_id%}selected
+                {% else %}
+                    {% ifequal child-category.id product.category_id%}selected{% endifequal %}
+                {% endifequal %}
+
+        >{{child-category.name}}</option>
         {% endfor %}
     </optgroup>
     {% endfor %}
 </select>
 <label for="">Description<span>*</span></label>
-<textarea name="description" class="my-textarea" placeholder="Product description">{{flash.description}}</textarea>
+<textarea name="description" class="my-textarea" placeholder="Product description">{% firstof flash.description product.description %}</textarea>
+{% if not product %}
 <label for="">Photo<span>*</span></label>
 <input type="file" name="photo">
+{% endif %}
 <label for="">Price<span>*</span></label>
-<input type="text" name="price" value="{{flash.price}}" placeholder="Price">
+<input type="text" name="price" value="{% firstof flash.price product.price %}" placeholder="Price">
 <label for="">Article<span>*</span></label>
-<input type="text" name="article" placeholder="Article number" value="{{flash.article}}">
+<input type="text" name="article" placeholder="Article number" value="{% firstof flash.article product.article %}">

@@ -10,7 +10,6 @@
             [clj-time.core :as t]
             [clj-time.coerce :as tc]))
 
-(def users-repository (->users-repository))
 (def category-repository (->category-repository))
 (def products-repository (->products-repository))
 (def comments-repository (->comments-repository))
@@ -36,7 +35,7 @@
                                                     :photo (clojure.string/replace filepath #"resources/public/" "")}
                                                    (select-keys params [:category_id :price :article :title :description])))
         (-> (response/found "/")
-            (assoc :flash {:message "Product successully added!"}))
+            (assoc :flash {:message "Product successfully added!"}))
         )
       ))
   )
@@ -48,8 +47,28 @@
       (def category (first (.get-record category-repository (:category_id row))))
       (def comments (.get-by-product-id comments-repository (:id row)))
       (layout/render "product/show.html" {:row row :category category :comments comments :flash (:flash request)})
-      )
-    (layout/error-page {:status 404 :title "Not found" :message "ooops"}))
+      ))
+  )
+
+(defn edit [id request]
+  (def product (first (.get-record products-repository id)))
+  (if product
+    (layout/render "product/edit.html" {:category-hierarchy (.get-hierarchy-format category-repository)
+                                        :product product
+                                        :flash (:flash request)}))
+  )
+
+(defn update [id {:keys [params] :as request}]
+  (let [errors (rv/validate-product-form params)]
+    (if errors
+      (-> (response/found (str "/product/" id "/edit"))
+          (assoc :flash (assoc params :errors errors)))
+      (do
+        (.update-record products-repository id (select-keys params [:category_id :price :article :title :description]))
+        (-> (response/found "/")
+            (assoc :flash {:message "Product successfully updated!"}))
+        )
+      ))
   )
 
 

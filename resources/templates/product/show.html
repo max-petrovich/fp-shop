@@ -20,6 +20,9 @@
               </div>
               <!-- Modal view content -->
               <div class="col-md-7 col-sm-7 col-xs-12">
+                {% ifequal identity.role 1 %}
+                [ <a href="{{servlet-context}}/product/{{row.id}}/edit">Edit product</a> ]
+                {% endifequal %}
                 <div class="aa-product-view-content">
                   <h3>{{row.title}}</h3>
                   <div class="aa-price-block">
