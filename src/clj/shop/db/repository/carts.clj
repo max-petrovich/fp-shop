@@ -24,4 +24,7 @@
                                          (with users)
                                          (with products)
                                          (where {:user_id user_id})))
+
+  (truncate-user-cart [this user_id] (delete carts
+                                             (where {:user_id user_id})))
   )

@@ -34,3 +34,14 @@
     (b/validate
       params
       :text [v/required [v/min-count 6]])))
+
+(defn validate-checkout-form [params]
+  (first
+    (b/validate
+      params
+      :first_name v/required
+      :last_name v/required
+      :email [v/required v/email]
+      :phone v/required
+      :address v/required
+      )))

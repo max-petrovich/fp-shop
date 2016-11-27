@@ -2,6 +2,7 @@
   (:require [compojure.core :refer [defroutes GET POST]]
             [shop.controllers.products-controller :as products-controller]
             [shop.controllers.cart-controller :as cart-controller]
+            [shop.controllers.checkout-controller :as checkout-controller]
             ))
 
 (defroutes admin-routes
@@ -14,5 +15,8 @@
            (GET "/cart" request (cart-controller/index request))
            (POST "/cart/add" request (cart-controller/add-product request))
            (POST "/cart/remove" request (cart-controller/remove-product request))
+
+           (GET "/checkout" request (checkout-controller/index request))
+           (POST "/checkout" request (checkout-controller/store request))
            )
 
