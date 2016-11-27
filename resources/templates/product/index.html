@@ -23,16 +23,7 @@
               <ul class="aa-product-catg">
                 <!-- start single product item -->
                 {% for product in products %}
-                <li>
-                  <figure>
-                    <a class="aa-product-img" href="{{servlet-context}}/product/{{product.id}}"><img src="{{servlet-context}}/{{product.photo}}"></a>
-                    <a class="aa-add-card-btn"href="#"><span class="fa fa-shopping-cart"></span>Add To Cart</a>
-                    <figcaption>
-                      <h4 class="aa-product-title"><a href="#">{{product.title}}</a></h4>
-                      <span class="aa-product-price">${{product.price}}</span>
-                    </figcaption>
-                  </figure>
-                </li>
+                {% include "product/product.html" %}
                 {% endfor %}
               </ul>
             </div>

@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+{% block content %}
+{% if not cart|empty? %}
+<!-- Cart view section -->
+<section id="cart-view">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="cart-view-area">
+          <div class="cart-view-table">
+              <div class="table-responsive">
+                <table class="table">
+                  <thead>
+                  <tr>
+                    <th></th>
+                    <th></th>
+                    <th>Product</th>
+                    <th>Price</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  {% for product in cart %}
+                  <tr>
+                    <td>
+                      <form action="{{servlet-context}}/cart/remove" method="post">
+                        {% csrf-field %}
+                        <input type="hidden" name="id" value="{{product.id}}" />
+                        <button type="submit" class="remove my-remove-button"><fa class="fa fa-close"></fa></button>
+                      </form>
+                    </td>
+                    <td><a href="{{servlet-context}}/product/{{product.product_id}}"><img src="{{servlet-context}}/{{product.photo}}" alt="img"></a></td>
+                    <td><a class="aa-cart-title" href="{{servlet-context}}/product/{{product.product_id}}">{{product.title}}</a></td>
+                    <td>${{product.price}}</td>
+                  </tr>
+                  {% endfor %}
+                  </tbody>
+                </table>
+              </div>
+            <!-- Cart Total view -->
+            <div class="cart-view-total">
+              <h4>Cart Totals</h4>
+              <table class="aa-totals-table">
+                <tbody>
+                <tr>
+                  <th>Total</th>
+                  <td>${{cart-total}}</td>
+                </tr>
+                </tbody>
+              </table>
+              <form action="" method="post">
+              {% csrf-field %}
+                <button class="aa-cart-view-btn" style="margin-top:10px;float:none">Proced to Checkout</button>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- / Cart view section -->
+{% else %}
+<div class="container panel-body" style="clear:both;">
+  <div class="alert alert-warning">Cart is empty</div>
+</div>
+{% endif %}
+{% endblock %}

@@ -7,7 +7,9 @@
 (defentity products)
 (defentity category
            (table :categories))
-(defentity carts)
+(defentity carts
+           (belongs-to users {:fk :user_id})
+           (belongs-to products {:fk :product_id}))
 (defentity comments
            (belongs-to users {:fk :user_id}))
 (defentity delivery-types

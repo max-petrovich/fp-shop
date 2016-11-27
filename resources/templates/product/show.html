@@ -34,7 +34,11 @@
                     </p>
                   </div>
                   <div class="aa-prod-view-bottom">
-                    <a class="aa-add-to-cart-btn" href="#">Add To Cart</a>
+                    <form action="{{servlet-context}}/cart/add" method="post">
+                      {% csrf-field %}
+                      <input type="hidden" name="product_id" value="{{product.id}}" />
+                      <button type="submit" class="aa-add-to-cart-btn my-add-to-cart-btn"><span class="fa fa-shopping-cart"></span>Add To Cart</button>
+                    </form>
                   </div>
                 </div>
               </div>

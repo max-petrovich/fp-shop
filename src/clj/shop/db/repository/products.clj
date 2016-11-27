@@ -9,7 +9,8 @@
   (get-record [this id] (select products
                                 (where {:id id})))
 
-  (get-records [this] (select products))
+  (get-records [this] (select products
+                              (order :date :DESC)))
 
   (insert-record [this data] (insert products
                                      (values data)))

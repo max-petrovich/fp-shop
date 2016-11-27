@@ -24,7 +24,4 @@
                                        (with users)
                                        (where {:product_id id})))
 
-  ;(get-by-product-id [this id] (sql-only (select comments
-  ;                                               (join users ))))
-
   )

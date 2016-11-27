@@ -46,16 +46,6 @@
 <a class="scrollToTop" href="#"><i class="fa fa-chevron-up"></i></a>
 <!-- END SCROLL TOP BUTTON -->
 
-{% if message %}
-<div class="container">
-    <div class="row panel-body">
-        <div class="col-lg-12">
-            <div class="alert alert-info">{{message}}</div>
-        </div>
-    </div>
-</div>
-{% endif %}
-
 <!-- Start header section -->
 <header id="aa-header">
     <!-- start header top  -->
@@ -76,9 +66,9 @@
                         <div class="aa-header-top-right">
                             <ul class="aa-head-top-nav-right">
                                 {% if identity %}
-                                <li><a href="account.html">My Account</a></li>
-                                <li class="hidden-xs"><a href="cart.html">My Cart</a></li>
-                                <li class="hidden-xs"><a href="checkout.html">Checkout</a></li>
+                                <!--<li><a href="account.html">My Account</a></li>-->
+                                <li class="hidden-xs"><a href="{{servlet-context}}/cart">My Cart</a></li>
+                                <li class="hidden-xs"><a href="{{servlet-context}}/checkout">Checkout</a></li>
                                 <li><a href="{{servlet-context}}/logout">Logout ({{identity.name}})</a></li>
                                 {% else %}
                                 <li><a href="" data-toggle="modal" data-target="#login-modal">Login</a></li>
@@ -110,7 +100,7 @@
                         {% if identity %}
                         <!-- cart box -->
                         <div class="aa-cartbox">
-                            <a class="aa-cart-link" href="#">
+                            <a class="aa-cart-link" href="{{servlet-context}}/cart">
                                 <span class="fa fa-shopping-basket"></span>
                                 <span class="aa-cart-title">Cart</span>
                             </a>
@@ -182,9 +172,18 @@
 </section>
 <!-- / menu -->
 
+{% if message %}
+<div class="container" style="clear:both;">
+    <div class="row" style="margin-top:20px;">
+        <div class="col-lg-12">
+            <div class="alert alert-info">{{message}}</div>
+        </div>
+    </div>
+</div>
+{% endif %}
+
 {% block content %}
 {% endblock %}
-
 {% include "footer.html" %}
 
 

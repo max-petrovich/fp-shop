@@ -15,3 +15,14 @@
 
  .aa-product-img img {
  max-height: 300px;}
+
+ .my-cart-btn {
+
+ width:100% !important;
+ border:0;
+ }
+
+
+ .my-remove-button {
+ border:0;
+ background:none}
