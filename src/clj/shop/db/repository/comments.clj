@@ -3,21 +3,11 @@
               [shop.db.entities :refer :all]
               [shop.db.protocols.common :refer [common-protocol]]
               [shop.db.protocols.comments :refer [comments-protocol]]
+              [shop.db.repository.common :refer [common-repository]]
               ))
 
 
 (deftype comments-repository []
-  common-protocol
-
-  (get-record [this id] (select comments
-                                (where {:id id})))
-  (get-records [this] (select comments))
-  (insert-record [this data] (insert comments
-                                     (values data)))
-  (update-record [this id data] "")
-  (delete-record [this id] (delete comments
-                                   (where {:id id})))
-
   comments-protocol
 
   (get-by-product-id [this id] (select comments
@@ -25,3 +15,7 @@
                                        (where {:product_id id})))
 
   )
+
+(extend comments-repository
+  common-protocol
+  (common-repository comments))

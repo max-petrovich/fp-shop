@@ -2,18 +2,14 @@
   (:require   [korma.core :refer :all]
               [shop.db.entities :refer :all]
               [shop.db.protocols.common :refer [common-protocol]]
-              [shop.db.protocols.orders :refer [orders-protocol]]))
+              [shop.db.protocols.orders :refer [orders-protocol]]
+              [shop.db.repository.common :refer [common-repository]]))
 
 (deftype orders-repository []
-  common-protocol
-
-  (get-record [this id] "")
-  (get-records [this] "")
-  (insert-record [this data] (insert orders
-                                     (values data)))
-  (update-record [this id data] "")
-  (delete-record [this id] "")
-
   orders-protocol
   (get-by-user-id [this user_id] "")
   )
+
+(extend orders-repository
+  common-protocol
+  (common-repository orders))

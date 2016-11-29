@@ -1,4 +1,6 @@
 (ns shop.controllers.checkout-controller
+  (:use [shop.db.protocols.common]
+        [shop.db.protocols.carts])
   (:require [shop.layout :as layout]
             [ring.util.http-response :as response]
             [clj-time.core :as t]
@@ -17,21 +19,16 @@
 
 
 (defn index [{:keys [identity params flash] :as request}]
-  (def cart (.get-by-user-id carts-repository (:id identity)))
-  (if-not (empty? cart)
-    (do
-      (def cart-total (reduce + (for [x cart]
-                                  (:price x))))
-      (layout/render "checkout.html" (merge {}
-                                            {:cart cart
-                                             :cart-total cart-total
-                                             :delivery_types (.get-records delivery-types-repository)
-                                             :flash flash
-                                             }))
-      )
-
-    (layout/render "404.html" {:status "oops.." :title "Your cart is empty" :text "Add products, please ;)"}))
-  )
+  (let [cart (get-by-user-id carts-repository (:id identity))]
+    (if-not (empty? cart)
+      (let [cart-total (reduce + (map #(:price %) cart))]
+        (layout/render "checkout.html" (merge {}
+                                              {:cart cart
+                                               :cart-total cart-total
+                                               :delivery_types (get-records delivery-types-repository)
+                                               :flash flash
+                                               })))
+      (layout/render "404.html" {:status "oops.." :title "Your cart is empty" :text "Add products, please ;)"}))))
 
 
 (defn store [{:keys [identity params flash] :as request}]
@@ -39,20 +36,17 @@
     (if errors
       (-> (response/found "/checkout")
           (assoc :flash (assoc params :errors errors)))
-      (do
-        (def cart (.get-by-user-id carts-repository (:id identity)))
-        (def cart-total (reduce + (for [x cart]
-                                    (:price x))))
-        ; order
-        (let [new-order-id (:generated_key (.insert-record orders-repository (merge {:user_id (:id identity)
-                                                                               :date (tc/to-sql-time (java.util.Date.))
-                                                                               :price cart-total}
-                                                                              (select-keys params [:email :phone :address :comment :delivery_type_id :first_name :last_name]))))]
+      (let [cart (get-by-user-id carts-repository (:id identity))
+            cart-total (reduce + (map #(:price %) cart))]
+        (let [new-order-id (:generated_key (insert-record orders-repository (merge {:user_id (:id identity)
+                                                                                     :date (tc/to-sql-time (java.util.Date.))
+                                                                                     :price cart-total}
+                                                                                    (select-keys params [:email :phone :address :comment :delivery_type_id :first_name :last_name]))))]
           (do
             ; order products
-            (dorun (map #(.insert-record order-products-repository {:order_id new-order-id :product_id (:id %)}) cart))
+            (dorun (map #(insert-record order-products-repository {:order_id new-order-id :product_id (:id %)}) cart))
             ; clear user cart
-            (.truncate-user-cart carts-repository (:id identity))
+            (truncate-user-cart carts-repository (:id identity))
             ; result
             (-> (response/found "/")
                 (assoc :flash {:message "Your order successfully placed. Thank you!"}))

@@ -3,29 +3,16 @@
             [korma.core :refer :all]
             [shop.db.entities :refer :all]
             [shop.db.protocols.common :refer [common-protocol]]
-            [shop.db.protocols.users :refer [users-protocol]]))
+            [shop.db.protocols.users :refer [users-protocol]]
+            [shop.db.repository.common :refer [common-repository]]))
 
 (deftype users-repository []
-
-  common-protocol
-
-  (get-record [this id] (select users
-                                (where {:id id})))
-
-  (get-records [this] (select users))
-
-  (insert-record [this data] (insert users
-                                     (values data)))
-
-  (update-record [this id data] (update users
-                                        (set-fields data)
-                                        (where {:id id})))
-
-  (delete-record [this id] (delete users
-                                   (where {:id id})))
-
   users-protocol
 
   (get-by-email [this email] (select users
                                      (where {:email email})))
   )
+
+(extend users-repository
+  common-protocol
+  (common-repository users))

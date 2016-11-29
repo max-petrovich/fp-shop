@@ -1,4 +1,6 @@
 (ns shop.controllers.account-controller
+  (:use [shop.db.protocols.common]
+        [shop.db.protocols.users])
   (:require [shop.layout :as layout]
             [shop.request-validators :as rv]
             [buddy.hashers :as hashers]
@@ -20,13 +22,12 @@
     (-> (response/found "/account")
         (assoc :flash (assoc params :auth-errors errors)))
     (do
-      (def user (first (.get-by-email users-repository (:email params))))
-
-      (if (and user (hashers/check (:password params) (:password user)))
-        (-> (response/found ((:headers req) "referer"))
-            (assoc :session (assoc session :identity user)))
-        (-> (response/found "/account")
-            (assoc :flash (assoc params :auth-errors {:email "Account not exists or wrong password!"}))))))
+      (let [user (first (get-by-email users-repository (:email params)))]
+        (if (and user (hashers/check (:password params) (:password user)))
+          (-> (response/found ((:headers req) "referer"))
+              (assoc :session (assoc session :identity user)))
+          (-> (response/found "/account")
+              (assoc :flash (assoc params :auth-errors {:email "Account not exists or wrong password!"})))))))
   )
 
 (defn do-register-user [{:keys [params]}]
@@ -34,10 +35,10 @@
     (cond
       errors (-> (response/found "/account")
                  (assoc :flash (assoc params :reg-errors errors)))
-      (first (.get-by-email users-repository (:email params))) (-> (response/found "/account")
+      (first (get-by-email users-repository (:email params))) (-> (response/found "/account")
                                                                    (assoc :flash (assoc params :reg-errors {:email "Email exists in base"})))
       :else (do
-              (.insert-record users-repository (merge {:role 2 :password (hashers/encrypt (params :password))}
+              (insert-record users-repository (merge {:role 2 :password (hashers/encrypt (params :password))}
                                                       (select-keys params [:name :last_name :email])))
               (-> (response/found "/account")
                   (assoc :flash {:message "You are successfully registred!"}))

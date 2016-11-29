@@ -1,4 +1,5 @@
 (ns shop.controllers.home-controller
+  (:use [shop.db.protocols.common])
   (:require [shop.layout :as layout]
             [shop.db.repository.products :refer :all]
             ))
@@ -7,5 +8,5 @@
 
 (defn index [{:keys [flash] :as req}]
 
-  (layout/render "home.html" (merge {:products (take 4 (.get-records products-repository))}
+  (layout/render "home.html" (merge {:products (take 4 (get-records products-repository))}
                                     flash)))

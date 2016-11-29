@@ -1,9 +1,11 @@
 (ns shop.routes.home
-  (:require [shop.layout :as layout]
-            [compojure.core :refer [defroutes GET POST]]
+  (:use [shop.db.protocols.common])
+  (:require [compojure.core :refer [defroutes GET POST]]
             [shop.controllers.home-controller :as home-controller]
             [shop.controllers.account-controller :as account-controller]
             [shop.controllers.products-controller :as products-controller]
+
+            [shop.db.repository.products :refer :all]
             ))
 
 (defroutes home-routes
