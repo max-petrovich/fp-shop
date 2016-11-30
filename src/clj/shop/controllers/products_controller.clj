@@ -33,7 +33,7 @@
           (assoc :flash (assoc params :errors errors)))
       (do
         (insert-record products-repository (merge {:user_id (:id (:identity request))
-                                                    :date (tc/to-sql-time (java.util.Date.))
+                                                    :date (tc/to-sql-time /(java.util.Date.))
                                                     :photo (clojure.string/replace (upload-file (:photo params)) #"resources/public/" "")}
                                                    (select-keys params [:category_id :price :article :title :description])))
         (-> (response/found "/")

@@ -29,7 +29,8 @@
                  [korma "0.4.3"]
                  [me.raynes/fs "1.4.6"]
                  [clj-time "0.12.2"]
-                 [selmer "1.10.0"]]
+                 [selmer "1.10.0"]
+                 [com.draines/postal "2.0.2"]]
 
   :min-lein-version "2.0.0"
 

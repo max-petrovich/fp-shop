@@ -3,10 +3,7 @@
   (:require [compojure.core :refer [defroutes GET POST]]
             [shop.controllers.home-controller :as home-controller]
             [shop.controllers.account-controller :as account-controller]
-            [shop.controllers.products-controller :as products-controller]
-
-            [shop.db.repository.products :refer :all]
-            ))
+            [shop.controllers.products-controller :as products-controller]))
 
 (defroutes home-routes
            (GET "/" request (home-controller/index request))
