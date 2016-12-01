@@ -1,5 +1,4 @@
 (ns shop.routes.home
-  (:use [shop.db.protocols.common])
   (:require [compojure.core :refer [defroutes GET POST]]
             [shop.controllers.home-controller :as home-controller]
             [shop.controllers.account-controller :as account-controller]
