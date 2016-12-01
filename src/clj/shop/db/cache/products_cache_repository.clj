@@ -9,8 +9,14 @@
 
 (deftype products-cache-repository []
   common-protocol
-  (get-records [this] (reset! cache (reduce #(assoc %1 (keyword (str (:id %2))) %2) {} (get-records products-repository)))
-                      (vals @cache))
+
+  (get-records [this] (let [records @cache]
+                        (if (empty? records)
+                          (let [from-db (reduce #(assoc %1 (keyword (str (:id %2))) %2) {} (get-records products-repository))]
+                            (reset! cache from-db)
+                            (vals from-db)
+                            )
+                          (vals records))))
 
   (get-record [this id] (let [cached ((keyword (str id)) @cache)]
                           (if (nil? cached)
@@ -26,7 +32,7 @@
       (update-record products-repository id data)
       (swap! cache assoc (keyword (str id)) (merge ((keyword (str id)) @cache) data))
       )
-  ;assoc (keyword (str id)) data)
+
   (delete-record [this id]
       (delete-record products-repository id)
       (swap! cache dissoc (keyword (str id)))))
