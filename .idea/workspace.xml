@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a3d7968-4af1-440d-b31b-a65e19684f37" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/clj/maxic/core.clj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/clj/maxic/emit.clj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/clj/maxic/render.clj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/clj/shop/controllers/test_controller.clj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/replstate.xml" afterPath="$PROJECT_DIR$/.idea/replstate.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/clj/shop/db/cache/products_cache_repository.clj" afterPath="$PROJECT_DIR$/src/clj/shop/db/cache/products_cache_repository.clj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/clj/shop/routes/home.clj" afterPath="$PROJECT_DIR$/src/clj/shop/routes/home.clj" />
     </list>
     <ignored path="shop.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,11 +28,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="products_cache_repository.clj" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/clj/shop/db/cache/products_cache_repository.clj">
+      <file leaf-file-name="core.clj" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/clj/maxic/core.clj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+            <state relative-caret-position="105">
+              <caret line="102" column="47" lean-forward="false" selection-start-line="102" selection-start-column="47" selection-end-line="102" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="emit.clj" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/clj/maxic/emit.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="render.clj" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/clj/maxic/render.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-796">
+              <caret line="16" column="6" lean-forward="false" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_controller.clj" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/clj/shop/controllers/test_controller.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -45,36 +80,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>*identity*</find>
-      <find>*ide</find>
-      <find>*app</find>
-      <find>wrap-ide</find>
-      <find>layo</find>
-      <find>app-categories</find>
-      <find>*app-categories*</find>
-      <find>wrap-restricted</find>
-      <find>merge</find>
-      <find>tags</find>
-      <find>top ra</find>
-      <find>comments-control</find>
-      <find>auth</find>
-      <find>cart</find>
-      <find>my car</find>
-      <find>insert-record</find>
-      <find>CHECKOUT PAGE</find>
-      <find>Have a Coupon</find>
-      <find>form</find>
-      <find>new-</find>
-      <find>delivery-types</find>
-      <find>(.</find>
-      <find>get-by-em</find>
-      <find>get-by-us</find>
-      <find>maxic</find>
-      <find>generated_key</find>
-      <find>generated</find>
-      <find>products-repo</find>
-      <find>products-repository</find>
-      <find>first</find>
+      <find>protoco</find>
+      <find>def</find>
+      <find>defreco</find>
+      <find>defmacro</find>
+      <find>render-select</find>
+      <find>select</find>
+      <find>Sql.</find>
+      <find>empty-select</find>
+      <find>render-fields</find>
+      <find>orderorder</find>
+      <find>order</find>
+      <find>r</find>
+      <find>render-order</find>
+      <find>joins</find>
+      <find>join*</find>
+      <find>join</find>
+      <find>render-join-type</find>
+      <find>render-join</find>
+      <find>'JOIN</find>
+      <find>render-expression</find>
+      <find>render-operator</find>
+      <find>quote</find>
+      <find>prepare-fields</find>
+      <find>fields*</find>
+      <find>render-field</find>
+      <find>prepare-expression</find>
+      <find>limit</find>
+      <find>fields</find>
+      <find>from</find>
+      <find>quote-name</find>
     </findStrings>
     <dirStrings>
       <dir>E:\Study\BSUIR\5 курс\9 семестр\ФП\shop\src\clj\shop</dir>
@@ -93,12 +128,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/clj/shop/db/protocols/comments.clj" />
-        <option value="$PROJECT_DIR$/src/clj/shop/middleware.clj" />
-        <option value="$PROJECT_DIR$/src/clj/shop/layout.clj" />
-        <option value="$PROJECT_DIR$/resources/templates/home.html" />
-        <option value="$PROJECT_DIR$/src/clj/shop/controllers/comments_controller.clj" />
-        <option value="$PROJECT_DIR$/src/clj/shop/routes/api.clj" />
         <option value="$PROJECT_DIR$/src/clj/shop/handler.clj" />
         <option value="$PROJECT_DIR$/resources/templates/products-section.html" />
         <option value="$PROJECT_DIR$/src/clj/shop/db/protocols/cart.clj" />
@@ -121,7 +150,6 @@
         <option value="$PROJECT_DIR$/src/clj/shop/db/protocols/order_products.clj" />
         <option value="$PROJECT_DIR$/src/clj/shop/db/repository/test.clj" />
         <option value="$PROJECT_DIR$/src/clj/shop/db/repository/products.clj" />
-        <option value="$PROJECT_DIR$/src/clj/shop/db/repository/common.clj" />
         <option value="$PROJECT_DIR$/src/clj/shop/db/repository/users.clj" />
         <option value="$PROJECT_DIR$/src/clj/shop/db/repository/orders.clj" />
         <option value="$PROJECT_DIR$/src/clj/shop/db/repository/order_products.clj" />
@@ -140,10 +168,17 @@
         <option value="$PROJECT_DIR$/src/clj/shop/controllers/account_controller.clj" />
         <option value="$PROJECT_DIR$/src/clj/shop/db/cache/products_repository.clj" />
         <option value="$PROJECT_DIR$/resources/templates/product/index.html" />
-        <option value="$PROJECT_DIR$/src/clj/shop/routes/home.clj" />
         <option value="$PROJECT_DIR$/src/clj/shop/controllers/products_controller.clj" />
         <option value="$PROJECT_DIR$/src/clj/shop/db/cache/products_cache_repository.clj" />
         <option value="$PROJECT_DIR$/src/clj/shop/controllers/home_controller.clj" />
+        <option value="$PROJECT_DIR$/src/clj/maxic/addon.clj" />
+        <option value="$PROJECT_DIR$/src/clj/shop/routes/home.clj" />
+        <option value="$PROJECT_DIR$/src/clj/shop/db/repository/common.clj" />
+        <option value="$PROJECT_DIR$/src/clj/maxic/records.clj" />
+        <option value="$PROJECT_DIR$/src/clj/shop/controllers/test_controller.clj" />
+        <option value="$PROJECT_DIR$/src/clj/maxic/render.clj" />
+        <option value="$PROJECT_DIR$/src/clj/maxic/emit.clj" />
+        <option value="$PROJECT_DIR$/src/clj/maxic/core.clj" />
       </list>
     </option>
   </component>
@@ -171,9 +206,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -226,180 +258,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clj" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clj" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protocols" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clj" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clj" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="repository" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clj" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cache" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clj" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="maxic" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -411,8 +278,8 @@
     <property name="cursive.last.file.extension.E\:/Study/BSUIR/5 \u043a\u0443\u0440\u0441/9 \u0441\u0435\u043c\u0435\u0441\u0442\u0440/\u0424\u041f/shop/src/clj" value="clj" />
     <property name="cursive.last.file.extension.E\:/Study/BSUIR/5 \u043a\u0443\u0440\u0441/9 \u0441\u0435\u043c\u0435\u0441\u0442\u0440/\u0424\u041f/shop/resources" value="clj" />
   </component>
-  <component name="ReplState" timestamp="1480538035224">{:repl-history {:ide [], :local [&quot;@atom-int&quot; &quot;(def x 10)&quot; &quot;(repeatedly 10\n            (fn [_] (def x (inc x))))&quot; &quot;(#'user/x...&quot; &quot;(repeatedly 10\n            (fn [] (def x (inc x))))\n(#'user/x...&quot; &quot;(repeatedly 10\n            (fn [] (def x (inc x))))&quot; &quot;(x)&quot; &quot;(def x 0)&quot; &quot;(repeatedly 10 \n            (fn [] (future (!swap x inc))))&quot; &quot;(def x (atom 10))&quot; &quot;(repeatedly 10\n            (fn [] (future (swap! x inc))))&quot; &quot;x&quot; &quot;(def user (ref {}))&quot; &quot;(dosync\n  (alter user merge {:name \&quot;Kim\&quot;})\n  (throw (Exception. \&quot;some wrong\&quot;))\n  (alter user merge {:age 32}))&quot; &quot;@user&quot; &quot;(def user-record (atom {}))&quot; &quot;(do\n  (swap! user-record merge {:name \&quot;Kim\&quot;})\n  (throw (Exception. \&quot;wrong\&quot;))\n  (swap! user-record merge {:age 32}))&quot; &quot;@user-record&quot; &quot;(def my-ref (ref 0))&quot; &quot;(future \n  (dosync \n    (alter my-ref inc)\n    (Thread/sleep 5000)))&quot; &quot;@my-ref&quot; &quot;(+1 1)&quot; &quot;(+ 1 1)&quot; &quot;(defn get-entity [name] \n  (ns-resolve 'shop.db.entities (symbol name)))&quot; &quot;(get-entity \&quot;users\&quot;)&quot; &quot;(get-entity \&quot;users3\&quot;)&quot; &quot;(get-entity \&quot;comments\&quot;)&quot; &quot;(defprotocol common-protocol\n  (get-records [this])\n  (get-record [this id]))&quot; &quot;(defn common-repository [entity-name] \n  {\n   :get-records (fn [this] (str params))\n   :get-record (fn [this params] (str params))\n   })&quot; &quot;(common-repository \&quot;ss\&quot;)&quot; &quot;(defn common-repo [name] {\n                          :get-records (fn [this] (str \&quot;get-record\&quot;))\n                          :get-record (fn [this params] (str params))\n                          })&quot; &quot;(extend test-repo \n  common-protocol\n  (common-repo \&quot;users\&quot;))&quot; &quot;(def test-repo (-&gt;test-repo))&quot; &quot;(def test-repository (-&gt;test-repo))&quot; &quot;(.get-records test-repository)&quot; &quot;(defn common-repo [name] {\n                          :get-records (fn [this] (str \&quot;hello maxic\&quot;))\n                          })&quot; &quot;(.get-records repo)&quot; &quot;(defn common-repo {:get-records (fn [this] (str \&quot;get-records\&quot;))})&quot; &quot;(defn common-repo [name] {:get-records (fn [this] (str \&quot;get-records\&quot;))})&quot; &quot;(extend test-repo\n  common-protocol\n  (common-repo \&quot;products\&quot;))&quot; &quot;(defprotocol common-protocol\n  (get-records [this]))&quot; &quot;(deftype test-repo [])&quot; &quot;(defn common-repo [name]\n  {\n   :get-records (fn [this] (str \&quot;get\&quot;))\n   })&quot; &quot;(extend test-repo\n  common-protocol\n  (common-repo \&quot;users\&quot;))&quot; &quot;(get-records test-repo)&quot; &quot;(def repo (-&gt;test-repo))&quot; &quot;(get-records repo)&quot; &quot;(deftype mail-service [smtp-spec]\n  (send [this data] (str data)))&quot; &quot;(deftype mail-service []\n  (send [this data] (str data)))&quot; &quot;(defprotocol mail-service-protocol\n  (send [this data]))&quot; &quot;(deftype mail-service [smtp-spec]\n  mail-service-protocol\n  (send-message [this data] (str data))\n  )&quot; &quot;(.send-message mail-service. {:maxic 1})&quot; &quot;(.send-message mail-service-&gt; {:maxic 1})&quot; &quot;(def mail-service mail-service.)&quot; &quot;(def mail-service -&gt;mail-service)&quot; &quot;(def mail-service mail-service-&gt;)&quot; &quot;(ns two)&quot; &quot;(deftype mail-service [])&quot; &quot;(deftype mail-service []\n  (send-message [this data] (str data)))&quot; &quot;(defprotocol mail-service-protocol \n  (send-message [this data]))&quot; &quot;(deftype mail-service [smtp-spec]\n  (send-message [this data] (str data)) )&quot; &quot;(deftype mail-service [smtp-spec]\n  mail-service-protocol\n  (send-message [this data] (str data)) )&quot; &quot;(.send-message mail-service. \&quot;dd\&quot;)&quot; &quot;(.send-message (mail-service.) \&quot;dd\&quot;)&quot; &quot;(-&gt;mail-service ({:host \&quot;3ww\&quot;}))&quot; &quot;(ns three)&quot; &quot;(deftype mail-service []\n  mail-service-protocol\n  (send-message [this data] (str data)))&quot; &quot;(def test (mail-service.))&quot; &quot;(def mail-service-test (mail-service.))&quot; &quot;(.send-message mail-service-test \&quot;sdasd\&quot;)&quot; &quot;(.send-message (mail-service.) \&quot;sdasdwqwe\&quot;)&quot; &quot;(ns four)&quot; &quot;(defprotocol mail-service\n  (send-message [this data]))&quot; &quot;(ns five)&quot; &quot;(defprotocol mail-service-protocol\n  (send-message [this data]))&quot; &quot;(deftype mail-service [&amp;opts]\n  mail-service-protocol\n  (send-message [this data] (str data \&quot;-\&quot; opts)))&quot; &quot;(deftype mail-service [opts]\n  mail-service-protocol\n  (send-message [this data] (str data \&quot;-\&quot; opts)))&quot; &quot;(.send-message (mail-service. {:host \&quot;local\&quot;}) \&quot;hello \&quot;)&quot; &quot;(def *agent* (agent mail-service. {:host \&quot;local\&quot;}))&quot; &quot;(def *mail-agent* (agent mail-service. {:host \&quot;local\&quot;}))&quot; &quot;(def mail-agent (agent mail-service. {:host \&quot;local\&quot;}))&quot; &quot;(def mail-agent (agent (mail-service. {:host \&quot;local\&quot;})))&quot; &quot;(send mail-agent .send-message {:name \&quot;maxic\&quot;})&quot; &quot;(send mail-agent send-message {:name \&quot;maxic\&quot;})&quot; &quot;(ns maxic)&quot; &quot;(:require postal.core :refer [send-message])&quot; &quot;(ns maxic (:require [post.core :refer [send-mssage]]))&quot; &quot;(ns maxic (:require [postal.core :refer [send-mssage]]))&quot; &quot;(ns maxic (:require [postal.core :refer [send-message]]))&quot; &quot;(defprotocol mail-service-protocol\n  (send-email [this data]))&quot; &quot;(deftype mail-service [&amp; opts]\n  mail-service-protocol\n  (send-email [this data] (send-message (:smtp opts) data)))&quot; &quot;(deftype mail-service [opts]\n  mail-service-protocol\n  (send-email [this data] (send-message (:smtp opts) data)))&quot; &quot;(def mail-agent (agent (mail-service. {:smtp {:host \&quot;smtp.gmail.com\&quot; :ssl true :user \&quot;unrelaxby@gmail.com\&quot; :pass \&quot;944x50x65\&quot;}})))&quot; &quot;(send mail-agent send-message {:from \&quot;unrelaxby@gmail.com\&quot;\n                               :to \&quot;unrelaxby@gmail.com\&quot;\n                               :subject \&quot;Hi!\&quot;\n                               :body \&quot;Test.\&quot;})&quot; &quot;@mail-agent&quot; &quot;(:status @mail-agent)&quot; &quot;(:ready @mail-agent)&quot; &quot;(:val @mail-agent)&quot; &quot;(def smtp {:host \&quot;smtp.gmail.com\&quot; :ssl true :user \&quot;unrelaxby@gmail.com\&quot; :pass \&quot;944x50x65\&quot;})&quot; &quot;(def email-msg {:from \&quot;unrelaxby@gmail.com\&quot;\n                :to \&quot;unrelaxby@gmail.com\&quot;\n                :subject \&quot;Hi!\&quot;\n                :body \&quot;Test.\&quot;})&quot; &quot;(.send-email (mail-service. smtp)  email-msg)&quot;], :remote []}}</component>
-  <component name="RunManager" selected="Clojure REPL.REPL for shop">
+  <component name="ReplState" timestamp="1480676372038">{:repl-history {:ide [], :local [&quot;(def x (atom 10))&quot; &quot;(repeatedly 10\n            (fn [] (future (swap! x inc))))&quot; &quot;x&quot; &quot;(def user (ref {}))&quot; &quot;(dosync\n  (alter user merge {:name \&quot;Kim\&quot;})\n  (throw (Exception. \&quot;some wrong\&quot;))\n  (alter user merge {:age 32}))&quot; &quot;@user&quot; &quot;(def user-record (atom {}))&quot; &quot;(do\n  (swap! user-record merge {:name \&quot;Kim\&quot;})\n  (throw (Exception. \&quot;wrong\&quot;))\n  (swap! user-record merge {:age 32}))&quot; &quot;@user-record&quot; &quot;(def my-ref (ref 0))&quot; &quot;(future \n  (dosync \n    (alter my-ref inc)\n    (Thread/sleep 5000)))&quot; &quot;@my-ref&quot; &quot;(+1 1)&quot; &quot;(+ 1 1)&quot; &quot;(defn get-entity [name] \n  (ns-resolve 'shop.db.entities (symbol name)))&quot; &quot;(get-entity \&quot;users\&quot;)&quot; &quot;(get-entity \&quot;users3\&quot;)&quot; &quot;(get-entity \&quot;comments\&quot;)&quot; &quot;(defprotocol common-protocol\n  (get-records [this])\n  (get-record [this id]))&quot; &quot;(defn common-repository [entity-name] \n  {\n   :get-records (fn [this] (str params))\n   :get-record (fn [this params] (str params))\n   })&quot; &quot;(common-repository \&quot;ss\&quot;)&quot; &quot;(defn common-repo [name] {\n                          :get-records (fn [this] (str \&quot;get-record\&quot;))\n                          :get-record (fn [this params] (str params))\n                          })&quot; &quot;(extend test-repo \n  common-protocol\n  (common-repo \&quot;users\&quot;))&quot; &quot;(def test-repo (-&gt;test-repo))&quot; &quot;(def test-repository (-&gt;test-repo))&quot; &quot;(.get-records test-repository)&quot; &quot;(defn common-repo [name] {\n                          :get-records (fn [this] (str \&quot;hello maxic\&quot;))\n                          })&quot; &quot;(.get-records repo)&quot; &quot;(defn common-repo {:get-records (fn [this] (str \&quot;get-records\&quot;))})&quot; &quot;(defn common-repo [name] {:get-records (fn [this] (str \&quot;get-records\&quot;))})&quot; &quot;(extend test-repo\n  common-protocol\n  (common-repo \&quot;products\&quot;))&quot; &quot;(defprotocol common-protocol\n  (get-records [this]))&quot; &quot;(deftype test-repo [])&quot; &quot;(defn common-repo [name]\n  {\n   :get-records (fn [this] (str \&quot;get\&quot;))\n   })&quot; &quot;(extend test-repo\n  common-protocol\n  (common-repo \&quot;users\&quot;))&quot; &quot;(get-records test-repo)&quot; &quot;(def repo (-&gt;test-repo))&quot; &quot;(get-records repo)&quot; &quot;(deftype mail-service [smtp-spec]\n  (send [this data] (str data)))&quot; &quot;(deftype mail-service []\n  (send [this data] (str data)))&quot; &quot;(defprotocol mail-service-protocol\n  (send [this data]))&quot; &quot;(deftype mail-service [smtp-spec]\n  mail-service-protocol\n  (send-message [this data] (str data))\n  )&quot; &quot;(.send-message mail-service. {:maxic 1})&quot; &quot;(.send-message mail-service-&gt; {:maxic 1})&quot; &quot;(def mail-service mail-service.)&quot; &quot;(def mail-service -&gt;mail-service)&quot; &quot;(def mail-service mail-service-&gt;)&quot; &quot;(ns two)&quot; &quot;(deftype mail-service [])&quot; &quot;(deftype mail-service []\n  (send-message [this data] (str data)))&quot; &quot;(defprotocol mail-service-protocol \n  (send-message [this data]))&quot; &quot;(deftype mail-service [smtp-spec]\n  (send-message [this data] (str data)) )&quot; &quot;(deftype mail-service [smtp-spec]\n  mail-service-protocol\n  (send-message [this data] (str data)) )&quot; &quot;(.send-message mail-service. \&quot;dd\&quot;)&quot; &quot;(.send-message (mail-service.) \&quot;dd\&quot;)&quot; &quot;(-&gt;mail-service ({:host \&quot;3ww\&quot;}))&quot; &quot;(ns three)&quot; &quot;(deftype mail-service []\n  mail-service-protocol\n  (send-message [this data] (str data)))&quot; &quot;(def test (mail-service.))&quot; &quot;(def mail-service-test (mail-service.))&quot; &quot;(.send-message mail-service-test \&quot;sdasd\&quot;)&quot; &quot;(.send-message (mail-service.) \&quot;sdasdwqwe\&quot;)&quot; &quot;(ns four)&quot; &quot;(defprotocol mail-service\n  (send-message [this data]))&quot; &quot;(ns five)&quot; &quot;(defprotocol mail-service-protocol\n  (send-message [this data]))&quot; &quot;(deftype mail-service [&amp;opts]\n  mail-service-protocol\n  (send-message [this data] (str data \&quot;-\&quot; opts)))&quot; &quot;(deftype mail-service [opts]\n  mail-service-protocol\n  (send-message [this data] (str data \&quot;-\&quot; opts)))&quot; &quot;(.send-message (mail-service. {:host \&quot;local\&quot;}) \&quot;hello \&quot;)&quot; &quot;(def *agent* (agent mail-service. {:host \&quot;local\&quot;}))&quot; &quot;(def *mail-agent* (agent mail-service. {:host \&quot;local\&quot;}))&quot; &quot;(def mail-agent (agent mail-service. {:host \&quot;local\&quot;}))&quot; &quot;(def mail-agent (agent (mail-service. {:host \&quot;local\&quot;})))&quot; &quot;(send mail-agent .send-message {:name \&quot;maxic\&quot;})&quot; &quot;(send mail-agent send-message {:name \&quot;maxic\&quot;})&quot; &quot;(ns maxic)&quot; &quot;(:require postal.core :refer [send-message])&quot; &quot;(ns maxic (:require [post.core :refer [send-mssage]]))&quot; &quot;(ns maxic (:require [postal.core :refer [send-mssage]]))&quot; &quot;(ns maxic (:require [postal.core :refer [send-message]]))&quot; &quot;(defprotocol mail-service-protocol\n  (send-email [this data]))&quot; &quot;(deftype mail-service [&amp; opts]\n  mail-service-protocol\n  (send-email [this data] (send-message (:smtp opts) data)))&quot; &quot;(deftype mail-service [opts]\n  mail-service-protocol\n  (send-email [this data] (send-message (:smtp opts) data)))&quot; &quot;(def mail-agent (agent (mail-service. {:smtp {:host \&quot;smtp.gmail.com\&quot; :ssl true :user \&quot;unrelaxby@gmail.com\&quot; :pass \&quot;944x50x65\&quot;}})))&quot; &quot;(send mail-agent send-message {:from \&quot;unrelaxby@gmail.com\&quot;\n                               :to \&quot;unrelaxby@gmail.com\&quot;\n                               :subject \&quot;Hi!\&quot;\n                               :body \&quot;Test.\&quot;})&quot; &quot;@mail-agent&quot; &quot;(:status @mail-agent)&quot; &quot;(:ready @mail-agent)&quot; &quot;(:val @mail-agent)&quot; &quot;(def smtp {:host \&quot;smtp.gmail.com\&quot; :ssl true :user \&quot;unrelaxby@gmail.com\&quot; :pass \&quot;944x50x65\&quot;})&quot; &quot;(def email-msg {:from \&quot;unrelaxby@gmail.com\&quot;\n                :to \&quot;unrelaxby@gmail.com\&quot;\n                :subject \&quot;Hi!\&quot;\n                :body \&quot;Test.\&quot;})&quot; &quot;(.send-email (mail-service. smtp)  email-msg)&quot; &quot;(def raw-select\n  ['SELECT :name :role_name\n   ['FROM :Users ['JOIN :Roles ['ON :Users.role_id :Roles_id]]]\n   ['WHERE ['LIKE :Users.name \&quot;And%\&quot;]\n    ['LIMIT 100]]])&quot; &quot;raw-select&quot; &quot;[SELECT]&quot; &quot;([SELECT])&quot; &quot;(def test [SELECT])&quot; &quot;'SELECT&quot; &quot;[]&quot; &quot;['SELECT :users ['WHERE [:coms &gt; 1]]]&quot; &quot;['SELECT :users ['WHERE [:coms '&gt; 1]]]&quot;], :remote []}}</component>
+  <component name="RunManager">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -753,7 +620,14 @@
       <option name="project" value="LOCAL" />
       <updated>1480594652240</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="[*] fix cache repository get records&#10;">
+      <created>1480618644971</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1480618644971</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView">
@@ -777,15 +651,15 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="REPL" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.32969153" sideWeight="0.50537634" order="10" side_tool="true" content_ui="tabs" x="707" y="104" width="793" height="744" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="REPL" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.32969153" sideWeight="0.50537634" order="10" side_tool="true" content_ui="tabs" x="0" y="122" width="1600" height="738" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6899329" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861736" sideWeight="0.49462366" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33557048" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33557048" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3601286" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19035369" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -822,10 +696,13 @@
     <MESSAGE value="[*] replace def by let in functions&#10;[+] common repository&#10; [*] extends all repositories by commin&#10;" />
     <MESSAGE value="[+] mail protocol, smtp mail service&#10;[+] agent (mail agent) to send user info when it register" />
     <MESSAGE value="[+] products cache repository" />
-    <option name="LAST_COMMIT_MESSAGE" value="[+] products cache repository" />
+    <MESSAGE value="[*] fix cache repository get records&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="[*] fix cache repository get records&#10;" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -833,97 +710,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/public/css/my-style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clj/shop/db/protocols/common.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/templates/product/show.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="23" column="60" lean-forward="false" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/templates/product/edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/templates/layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="176" column="40" lean-forward="false" selection-start-line="176" selection-start-column="40" selection-end-line="176" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/templates/cart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/templates/product/form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="56" lean-forward="false" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/templates/product/add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="27" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="12" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/templates/404.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clj/shop/db/protocols/orders.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="34" lean-forward="true" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/templates/checkout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="58" column="73" lean-forward="false" selection-start-line="58" selection-start-column="73" selection-end-line="58" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/migrations/20161120151633-init-project.up.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="67" column="17" lean-forward="false" selection-start-line="67" selection-start-column="17" selection-end-line="67" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clj/shop/layout.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="68" lean-forward="false" selection-start-line="24" selection-start-column="68" selection-end-line="24" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/clj/shop/db/protocols/carts.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1002,13 +788,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/clj/shop/controllers/cart_controller.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="32" lean-forward="false" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project.clj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1061,35 +840,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/clj/shop/db/repository/carts.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="47" lean-forward="true" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/clj/shop/db/repository/cache.clj" />
     <entry file="file://$PROJECT_DIR$/resources/templates/product/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="16" column="51" lean-forward="true" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clj/shop/routes/home.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="46" lean-forward="false" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clj/shop/db/repository/products.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1104,7 +859,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="68" lean-forward="false" selection-start-line="5" selection-start-column="68" selection-end-line="5" selection-end-column="68" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1112,15 +866,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="29" lean-forward="false" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clj/shop/db/repository/common.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1128,15 +873,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="26" lean-forward="false" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/clj/shop/controllers/products_controller.clj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="683">
-          <caret line="48" column="29" lean-forward="false" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1144,7 +880,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="26" lean-forward="false" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1152,7 +887,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
           <caret line="47" column="24" lean-forward="false" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1160,14 +894,127 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="37" lean-forward="true" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/clj/shop/db/cache/products_cache_repository.clj">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        <state relative-caret-position="411">
+          <caret line="25" column="37" lean-forward="true" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clj/shop/db/repository/carts.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="22" lean-forward="true" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/korma/korma/0.4.3/korma-0.4.3.jar!/korma/sql/fns.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/korma/korma/0.4.3/korma-0.4.3.jar!/korma/db.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/korma/korma/0.4.3/korma-0.4.3.jar!/korma/sql/engine.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2193">
+          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/korma/korma/0.4.3/korma-0.4.3.jar!/korma/sql/utils.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-405">
+          <caret line="1" column="2" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clj/maxic/log/shop.log" />
+    <entry file="file://$PROJECT_DIR$/src/clj/maxic/components.clj" />
+    <entry file="file://$PROJECT_DIR$/src/clj/shop/test_maxic.clj" />
+    <entry file="file://$PROJECT_DIR$/src/clj/shop/controllers/cart_controller.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="32" lean-forward="false" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clj/shop/routes/home.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="51" lean-forward="true" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clj/shop/controllers/products_controller.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="48" column="29" lean-forward="false" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clj/shop/db/repository/products.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/korma/korma/0.4.3/korma-0.4.3.jar!/korma/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="340" column="6" lean-forward="false" selection-start-line="340" selection-start-column="6" selection-end-line="340" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clj/shop/db/repository/common.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="50" lean-forward="true" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clj/maxic/records.clj" />
+    <entry file="file://$PROJECT_DIR$/src/clj/maxic/render.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-796">
+          <caret line="16" column="6" lean-forward="false" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clj/shop/controllers/test_controller.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clj/maxic/emit.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clj/maxic/core.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="102" column="47" lean-forward="false" selection-start-line="102" selection-start-column="47" selection-end-line="102" selection-end-column="47" />
           <folding />
         </state>
       </provider>
