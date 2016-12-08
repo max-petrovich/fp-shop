@@ -30,8 +30,7 @@
                                id))
   (update-record [this id data]
       (update-record products-repository id data)
-      (swap! cache assoc (keyword (str id)) (merge ((keyword (str id)) @cache) data))
-      )
+      (swap! cache assoc (keyword (str id)) (merge ((keyword (str id)) @cache) data)))
 
   (delete-record [this id]
       (delete-record products-repository id)

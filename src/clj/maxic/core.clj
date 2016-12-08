@@ -96,19 +96,11 @@
   [f m]
   (into (if (map? m) (empty m) {}) (for [[k v] m] [k (f v)])))
 
-(def surrogate-alias-counter (atom 0))
-
-(defn generate-surrogate-alias
-  []
-  (let [k (swap! surrogate-alias-counter #(-> % inc (mod 1000000)))]
-    (keyword (format "__%08d" k))))
-
 (defn as-alias
   [n]
   (cond
-    (keyword? n) n
     (string? n) (keyword n)
-    :else (generate-surrogate-alias)))
+    :else n))
 
 (defn- prepare-fields
   [fs]

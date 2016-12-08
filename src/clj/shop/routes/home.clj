@@ -4,6 +4,7 @@
             [shop.controllers.account-controller :as account-controller]
             [shop.controllers.products-controller :as products-controller]
             [shop.controllers.test-controller :as test-controller]
+            [shop.controllers.search-controller :as search-controller]
             ))
 
 (defroutes home-routes
@@ -18,5 +19,6 @@
            (POST "/product/:product_id" [product_id :as request] (products-controller/comments-store product_id request))
 
            (GET "/test" [] (test-controller/index))
-           )
+
+           (GET "/search/:query" [query] (search-controller/index query)))
 

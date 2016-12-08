@@ -35,6 +35,7 @@
   :min-lein-version "2.0.0"
 
   :jvm-opts ["-server" "-Dconf=.lein-env"]
+  :java-source-paths ["src/java"]
   :source-paths ["src/clj"]
   :resource-paths ["resources"]
   :target-path "target/%s/"
